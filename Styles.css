@@ -1,0 +1,183 @@
+body{
+	margin-left:auto;
+	margin-right:auto;
+	width:1200px;
+}
+header img{
+	float:left;
+}
+header h1{
+	width:600px;
+	float:left;
+}
+header p{
+	
+	float:right;
+	background-color: #d9d9d9;
+    padding: 10px 20px;
+	margin-right:10px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+}
+header p a{
+	text-decoration: none;
+	color:white;
+}
+header p a:hover{
+	background-color:transparent;
+}
+header p:hover{
+	background-color:#4CAF50;
+}
+nav{
+	width:1000px;
+	float:left;
+}
+nav ul {
+    list-style-type: none;
+    height:50px;
+}
+
+nav li {
+    display: inline;
+	
+}
+nav ul li a{
+	background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+a:hover{
+	background-color: #4CAF50;
+}
+aside {
+	float: left;
+    width: 203px;
+	margin-top:20px;
+}
+aside li {
+    display: inline;
+}
+aside li a {
+    display: block;
+    width: 200px;
+}
+aside ul li a{
+	background-color: #d9d9d9;
+    color: white;
+    padding: 10px 20px;
+	margin-bottom:10px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+section{	
+	width:900px;
+	float:right;
+}
+.img{
+	float:left;
+	margin-right:30px;
+}
+.price{
+	font-size:30px;
+}
+mark { 
+    background-color: white;
+    color: red;
+}
+article ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+article li{
+	display: block;
+    width: 300px;
+	float:left;
+}
+article a:hover{
+    background-color: white;
+	color:green;
+}
+article address{
+	display: block;
+    width: 300px;
+	float:left;
+}
+
+form{
+	width:700px;
+}
+input[type=text],[type=email],[type=password],[type=date],[type=tel]{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input.type-text{
+	width:15%;
+}
+input[type=checkbox],[type=radio]{
+    width:18px;
+	height:18px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	float:right;
+	border-radius: 4px 4px 4px 4px;
+}
+input[value=Купи]{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	float:left;
+	border-radius: 4px 4px 4px 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ttd {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2
+}
+footer{
+	width:1200px;
+	float:left;
+    text-align:center;
+	margin-top:25px;
+}
+.clear {
+	clear: both;
+}

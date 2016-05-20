@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="description" name="online library,онлайн книжарница,онлайн библиотека">
+    <meta content="keywords" name="книги,продаване онлайн,промоции">
+	<meta content="author" name="Doroteya Garbachkova">
+	<meta name="robots" content="index">
+    <link href="Styles.css" rel="stylesheet"/>
+    <title>Електронна книжарница</title>
+    <link href="Images/favicon.ico" rel="icon"/>
+</head>
+<body>
+    <header>
+        <img alt="Лого" title="Лого-книги" src="Images/Books-aj.svg_aj_ashton_01.svg" width=
+        "100">
+        <h1>Електронна книжарница ДеМи</h1>
+        <p><a href="Registration.html">Регистрация</a></p>
+        <p><a href="Login.html">Вход</a></p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="HomePage.html">Начало</a>
+            </li>
+            <li>
+                <a href="Products.html">Продукти</a>
+            </li>
+			<li>
+                <a href="Sales.html">Промоции</a>
+            </li>
+            <li>
+                <a href="Aboutus.html">За нас</a>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+        <ul>
+            <li>
+                <a href="ArtLiterature.html">Художествена литература</a>
+            </li>
+            <li>
+                <a href="KidsLiterature.html">Литература за деца и юноши</a>
+            </li>
+			<li>
+                <a href="Encyclopedia.html">Енциклопедии и справочници</a>
+            </li>
+        </ul>
+    </aside>
+    <section>
+        <h1>Регистрация</h1>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Данни за регистрация</legend>
+					<label for="un">Потребителско име</label> 
+					<input id="un" name="username" type="text" value="" autofocus><br/>
+                    <label for="pass">Парола</label> 
+					<input id="pass" name="password" type="password" value=""><br/>
+                    <label for="reppass">Повторете паролата</label> 
+					<input id="reppass" name="password" type="password" value=""><br/>
+                    <label for="email">Е-мeйл</label> 
+					<input id="email" name="email-address" type="email" placeholder="name@domain.com"><br/>
+					<label for="fn">Име и фамилия</label> 
+					<input id="fn" name="username" type="text" value=""><br/>
+					<label for="date">Дата на раждане</label> 
+					<input type="date" name="birthday" id="date"><br/>
+					<label for="sex">Пол</label> 
+					<input type="radio" name="gender" value="male" id="sex" checked>Мъж
+					<input type="radio" name="gender" value="female" id="sex">Жена<br/>
+					<label for="tel">Телефон</label> 
+					<input type="tel" name="phone-number" placeholder="(555) 555-5555" id="tel"><br/>
+					<label for="img">Избери снимка</label> 
+					<input type="file" name="file" id="img"><br/>
+				
+					<label for="inf">Желая да получавам информация за новите
+                    книги в ДеМи</label> <input id="inf" name="inf" type=
+                    "checkbox" value=""><br/>
+                    <label for="remail">Съгласен съм да получавам други писма
+                    от Хеликон с промоционални продукти.</label> <input id=
+                    "remail" name="email" type="checkbox" value=""><br/>
+				
+					<input type="submit" name="submit" value="Изпрати">
+                    <input type="reset" name="reset" value="Изчисти"> 
+                </fieldset>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <hr>
+        <p>Copyright © 2000-2016<br>
+        Всички права запазени</p>
+    </footer>
+</body>
+</html>
