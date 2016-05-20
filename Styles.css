@@ -4,6 +4,7 @@ body{
 	width:1200px;
 }
 header img{
+	width:100px;
 	float:left;
 }
 header h1{
@@ -77,6 +78,7 @@ section{
 	float:right;
 }
 .img{
+	width:350px;
 	float:left;
 	margin-right:30px;
 }
@@ -95,6 +97,7 @@ article ul{
 article li{
 	display: block;
     width: 300px;
+	height:445px;
 	float:left;
 }
 article a:hover{
@@ -127,9 +130,8 @@ input[type=checkbox],[type=radio]{
     margin: 8px 0;
     box-sizing: border-box;
 }
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #4CAF50;
-    border: none;
+input[type=submit], input[type=reset] {
+    border:none;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -137,6 +139,9 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
 	float:right;
 	border-radius: 4px 4px 4px 4px;
+}
+input[value=Изпрати]{
+	background-color: #4CAF50;
 }
 input[value=Купи]{
 	background-color: #4CAF50;
@@ -174,9 +179,13 @@ tr:nth-child(even){
 }
 footer{
 	width:1200px;
-	float:left;
+    float:left;
     text-align:center;
 	margin-top:25px;
+
+   
+   
+ 
 }
 .clear {
 	clear: both;
