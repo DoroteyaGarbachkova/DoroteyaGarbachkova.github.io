@@ -12,17 +12,17 @@ header h1{
 	float:left;
 }
 header p{
-	
 	float:right;
 	background-color: #bfbfbf;
-    padding: 10px 20px;
-	margin-right:10px;
+    margin-right:10px;
+	padding: 10px 15px;
     text-decoration: none;
     border-radius: 4px 4px 4px 4px;
 }
 header p a{
 	text-decoration: none;
 	color:white;
+	padding: 10px 15px;
 }
 header p a:hover{
 	background-color:transparent;
@@ -41,7 +41,6 @@ nav ul {
 
 nav li {
     display: inline;
-	
 }
 nav ul li a{
 	background-color: black;
