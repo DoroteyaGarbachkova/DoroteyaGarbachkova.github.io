@@ -165,7 +165,7 @@ input[value=Купи]{
 }
 input[value=Търси]{
 	float:none;
-	background-color: #bfbfbf;
+	background-color: black;
 	margin-right:10px;
 	margin-top:0px;
 	border-radius: 4px 4px 0px 0px;
