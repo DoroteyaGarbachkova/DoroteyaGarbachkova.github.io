@@ -145,6 +145,9 @@ input[value=Изпрати]{
 input[value=Изчисти]{
 	background-color: #bfbfbf;
 }
+input[value=Изчисти]:hover{
+	background-color:  #4CAF50;
+}
 input[value=Купи]{
 	background-color: #4CAF50;
     border: none;
