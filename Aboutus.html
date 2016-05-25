@@ -65,13 +65,16 @@
 				<article>
                 <h2>Форма на запитване</h2>
 				<hr/>
+				<form>
                 <label for="fn">Име</label> 
 				<input  id="fn" name="firstname" type="text" value="" autofocus>
                 <label for="email">Е-мeйл</label> 
 			    <input id="email" name="email-address" type="email" placeholder="name@domain.com"><br/>
                 <p>Запитване:</p>
                 <textarea cols="60" rows="6">Някакъв текст...</textarea> 
-				<input type="submit" value="Изпрати">
+				<input type="submit" name="submit" value="Изпрати">
+				<input type="reset" name="reset" value="Изчисти"> 
+				</form>
 				</article>
             </section>
             <footer>
