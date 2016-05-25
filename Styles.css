@@ -205,6 +205,9 @@ footer{
     text-align:center;
 	margin-top:25px;
 }
+footer a:hover{
+	background-color:white;
+}
 .clear {
 	clear: both;
 }
