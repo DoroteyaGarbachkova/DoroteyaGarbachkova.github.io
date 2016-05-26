@@ -1,24 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 body{
 	margin-left:auto;
 	margin-right:auto;
 	width:1200px;
 	font-family: "Zapf Chancery", cursive;
 }
+h1{
+	font-size:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+h2{
+	font-size:25px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+h3{
+	font-size:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+p{
+	font-size:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+header{
+	width:1200px;
+	margin-top:20px;
+}
 header img{
 	width:100px;
 	float:left;
 }
 header h1{
-	width:600px;
-	float:left;
+   width:600px;
+   padding-top:20px;
 }
 header p{
 	float:right;
 	background-color: #bfbfbf;
-margin-right:10px;
+	margin-top:0px;
+	margin-right:10px;
 	padding: 10px 15px;
-text-decoration: none;
-border-radius: 4px 4px 0px 0px;
+	text-decoration: none;
+	border-radius: 4px 4px 0px 0px;
 }
 header p a{
 	text-decoration: none;
@@ -33,49 +108,68 @@ header p:hover{
 }
 nav{
 	width:1100px;
-	float:left;
+	float:right;
 }
 nav ul {
-list-style-type: none;
-height:50px;
+	list-style-type: none;
+	height:50px;
 }
-
 nav li {
-display: inline;
+	display: inline;
 }
 nav ul li a{
 	background-color: black;
-color: white;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 4px 4px 0 0;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px 4px 0 0;
 }
 a:hover{
 	background-color: #4CAF50;
 }
+nav ul li{
+	position: relative;
+}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  top:30px;
+  left:0px;
+}
+ul li ul li { 
+  background: #555; 
+  display: block;
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+
+
+
 .search{
 	float:right;
 }
-
 aside {
 	float: left;
-width: 203px;
+	width: 203px;
 	margin-top:20px;
 }
 aside li {
-display: inline;
+	display: inline;
 }
 aside li a {
-display: block;
-width: 200px;
+	display: block;
+	width: 200px;
 }
 aside ul li a{
 	background-color:#bfbfbf;
-color: white;
-padding: 10px 20px;
+	color: white;
+	padding: 10px 20px;
 	margin-bottom:10px;
-text-decoration: none;
-border-radius: 4px 4px 0 0;
+	text-decoration: none;
+	border-radius: 4px 4px 0 0;
 }
 section{
 	width:900px;
@@ -86,62 +180,81 @@ section{
 	float:left;
 	margin-right:30px;
 }
+.img {
+  height: 450px;
+  width: 350px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.img:hover {
+  width: 450px;
+  height: 600px;
+}
 .price{
 	font-size:30px;
 }
 mark { 
-background-color: white;
-color: red;
+	background-color: white;
+	color: red;
 }
 article ul{
 	list-style-type: none;
-margin: 0;
-padding: 0;
+	margin-top: 20px;
+	padding: 0;
 }
 article li{
 	display: block;
-width: 300px;
+	width: 300px;
 	height:445px;
 	float:left;
 	margin-bottom: 30px;
 }
 article a:hover{
-background-color: white;
+	background-color: white;
 	color:green;
+}
+figcaption{
+	font-size:15px;
+
 }
 article address{
 	display: block;
-width: 300px;
+	width: 300px;
 	float:left;
 }
-
 form{
 	width:700px;
 }
 input[type=text],[type=email],[type=password],[type=date],[type=tel]{
-width: 100%;
-padding: 6px 10px;
-margin: 8px 0;
-box-sizing: border-box;
+	width: 100%;
+	padding: 6px 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
 }
-
+input[name=username]:focus{
+    border-color:#4CAF50;
+}
 input.type-text{
 	width:15%;
 }
 input[type=checkbox],[type=radio]{
-width:18px;
+	width:18px;
 	height:18px;
-padding: 6px 10px;
-margin: 8px 0;
-box-sizing: border-box;
+	padding: 6px 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
 }
 input[type=submit], input[type=reset] {
-border:none;
-color: white;
-padding: 10px 20px;
-text-decoration: none;
-margin: 4px 2px;
-cursor: pointer;
+	border:none;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
 	float:right;
 	border-radius: 4px 4px 4px 4px;
 }
@@ -156,12 +269,12 @@ input[value=Изчисти]:hover{
 }
 input[value=Купи]{
 	background-color: #4CAF50;
-border: none;
-color: white;
-padding: 10px 20px;
-text-decoration: none;
-margin: 4px 2px;
-cursor: pointer;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
 	float:left;
 	border-radius: 4px 4px 4px 4px;
 }
@@ -177,35 +290,51 @@ input[value=Търси]:hover{
 }
 input[type=search]{
 	width:280px;
-height:35px;
+	height:35px;
 }
 textarea {
-width: 100%;
-height: 80px;
-padding: 12px 20px;
-box-sizing: border-box;
-border: 2px solid #ccc;
-border-radius: 4px;
-background-color: #f8f8f8;
-font-size: 16px;
-resize: none;
+	width: 100%;
+	height: 80px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
 }
 table {
-border-collapse: collapse;
-width: 100%;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top:20px;
+	margin-bottom: 20px;
 }
 ttd {
-text-align: left;
-padding: 8px;
+	text-align: left;
+	padding: 8px;
 }
 tr:nth-child(even){
 	background-color: #f2f2f2
 }
 footer{
 	width:1200px;
-float:left;
-text-align:center;
+	float:left;
+	text-align:center;
 	margin-top:45px;
+}
+footer ul{
+	margin-bottom:20px;
+}
+footer li{
+	display:inline;
+	border-right: solid;
+}
+footer li a{
+	margin-left:10px;
+	margin-right:10px;
+}	
+footer li:last-child{
+	border-right: none;
 }
 footer a:hover{
 	background-color:white;
