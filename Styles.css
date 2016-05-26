@@ -104,6 +104,7 @@ article li{
     width: 300px;
 	height:445px;
 	float:left;
+	margin-bottom: 30px;
 }
 article a:hover{
     background-color: white;
