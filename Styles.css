@@ -11,15 +11,14 @@ header img{
 header h1{
 	width:600px;
 	float:left;
-	
 }
 header p{
 	float:right;
 	background-color: #bfbfbf;
-    margin-right:10px;
+margin-right:10px;
 	padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 4px 4px 0px 0px;
+text-decoration: none;
+border-radius: 4px 4px 0px 0px;
 }
 header p a{
 	text-decoration: none;
@@ -37,19 +36,19 @@ nav{
 	float:left;
 }
 nav ul {
-    list-style-type: none;
-    height:50px;
+list-style-type: none;
+height:50px;
 }
 
 nav li {
-    display: inline;
+display: inline;
 }
 nav ul li a{
 	background-color: black;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px 4px 0 0;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 4px 4px 0 0;
 }
 a:hover{
 	background-color: #4CAF50;
@@ -60,25 +59,25 @@ a:hover{
 
 aside {
 	float: left;
-    width: 203px;
+width: 203px;
 	margin-top:20px;
 }
 aside li {
-    display: inline;
+display: inline;
 }
 aside li a {
-    display: block;
-    width: 200px;
+display: block;
+width: 200px;
 }
 aside ul li a{
 	background-color:#bfbfbf;
-    color: white;
-    padding: 10px 20px;
+color: white;
+padding: 10px 20px;
 	margin-bottom:10px;
-    text-decoration: none;
-    border-radius: 4px 4px 0 0;
+text-decoration: none;
+border-radius: 4px 4px 0 0;
 }
-section{	
+section{
 	width:900px;
 	float:right;
 }
@@ -91,28 +90,28 @@ section{
 	font-size:30px;
 }
 mark { 
-    background-color: white;
-    color: red;
+background-color: white;
+color: red;
 }
 article ul{
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 article li{
 	display: block;
-    width: 300px;
+width: 300px;
 	height:445px;
 	float:left;
 	margin-bottom: 30px;
 }
 article a:hover{
-    background-color: white;
+background-color: white;
 	color:green;
 }
 article address{
 	display: block;
-    width: 300px;
+width: 300px;
 	float:left;
 }
 
@@ -120,29 +119,29 @@ form{
 	width:700px;
 }
 input[type=text],[type=email],[type=password],[type=date],[type=tel]{
-    width: 100%;
-    padding: 6px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
+width: 100%;
+padding: 6px 10px;
+margin: 8px 0;
+box-sizing: border-box;
 }
 
 input.type-text{
 	width:15%;
 }
 input[type=checkbox],[type=radio]{
-    width:18px;
+width:18px;
 	height:18px;
-    padding: 6px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
+padding: 6px 10px;
+margin: 8px 0;
+box-sizing: border-box;
 }
 input[type=submit], input[type=reset] {
-    border:none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+border:none;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
 	float:right;
 	border-radius: 4px 4px 4px 4px;
 }
@@ -157,12 +156,12 @@ input[value=Изчисти]:hover{
 }
 input[value=Купи]{
 	background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+border: none;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
 	float:left;
 	border-radius: 4px 4px 4px 4px;
 }
@@ -178,34 +177,34 @@ input[value=Търси]:hover{
 }
 input[type=search]{
 	width:280px;
-    height:35px;
+height:35px;
 }
 textarea {
-    width: 100%;
-    height: 80px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
+width: 100%;
+height: 80px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+border-collapse: collapse;
+width: 100%;
 }
 ttd {
-    text-align: left;
-    padding: 8px;
+text-align: left;
+padding: 8px;
 }
 tr:nth-child(even){
 	background-color: #f2f2f2
 }
 footer{
 	width:1200px;
-    float:left;
-    text-align:center;
+float:left;
+text-align:center;
 	margin-top:45px;
 }
 footer a:hover{

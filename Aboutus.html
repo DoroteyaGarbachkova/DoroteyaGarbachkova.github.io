@@ -1,94 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta content="description" name="online library,онлайн книжарница,онлайн библиотека">
-    <meta content="keywords" name="книги,продаване онлайн,промоции">
+	<meta content="keywords" name="книги,продаване онлайн,промоции">
 	<meta content="author" name="Doroteya Garbachkova">
 	<meta name="robots" content="index">
-    <title>Електронна книжарница</title>
-    <link href="Styles.css" rel="stylesheet"/>
-    <link href="Images/favicon.ico" rel="icon" />
+	<title>Електронна книжарница</title>
+	<link href="Styles.css" rel="stylesheet"/>
+	<link href="Images/favicon.ico" rel="icon" />
 </head>
 <body>
-    <header>
-        <a href="index.html"><img alt="Електронна книжарница ДеМи" title="Електронна книжарница ДеМи" src="Images/Електронна книжарница ДеМи.svg"/></a>
-        <h1>Електронна книжарница ДеМи</h1>
+	<header>
+		<a href="index.html"><img alt="Електронна книжарница ДеМи" title="Електронна книжарница ДеМи" src="Images/Електронна книжарница ДеМи.svg"/></a>
+		<h1>Електронна книжарница ДеМи</h1>
 		<p><a href="Registration.html">Регистрация</a></p>
 		<p><a href="Login.html">Вход</a></p>
-        </header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Начало</a>
-                    </li>
-                    <li>
-                        <a href="Products.html">Продукти</a>
-                    </li>
-					<li>
-                        <a href="Sales.html">Промоции</a>
-                    </li>
-                    <li>
-                        <a href="Aboutus.html">За нас</a>
-                    </li>
-					<li class="search">
-                       <input type="search" results=5 autosave=a_unique_value >
-				       <input type="submit" value="Търси">
-                   </li>  
-                </ul>
-            </nav>
-            <aside>
-                <ul>
-                    <li>
-                        <a href="ArtLiterature.html">Художествена литература</a>
-                    </li>
-                    <li>
-                        <a href="KidsLiterature.html">Литература за деца и юноши</a>
-                    </li>
-				    <li>
-                       <a href="Encyclopedia.html">Енциклопедии и справочници</a>
-                   </li>
-                </ul>
-            </aside>
-            <section>	      
-                <h2>Център за обслужване на клиенти</h2>
-				<hr/>
-				<article>
-                <address>
-                    <p>тел: <a href="tel:02%204604081">02 4604081</a>,<a href="tel:02%204604080">02 4604080</a></p>
-                    <p>E-mail:<a href="mailto:service@helikon.bg?subject=free%20chocolate">service@demi.bg</a></p>
-                </address>
-				</article>
-				<div class="clear"></div>
-			    <article>
-				<h2>Работно време</h2>
-				<hr/>
-				<p>Приемане на поръчки от <time>08.00</time> до <time>19.00</time></p>
-				</article>
-				<div class="clear"></div>
-				<article>
-                <h2>Форма на запитване</h2>
-				<hr/>
-				<form>
-                <label for="fn">Име</label> 
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Начало</a>
+			</li>
+			<li>
+				<a href="Products.html">Продукти</a>
+			</li>
+			<li>
+				<a href="Sales.html">Промоции</a>
+			</li>
+			<li>
+				<a href="Aboutus.html">За нас</a>
+			</li>
+			<li class="search">
+				<input type="search" results=5 autosave=a_unique_value >
+				<input type="submit" value="Търси">
+			</li>  
+		</ul>
+	</nav>
+	<aside>
+		<ul>
+			<li>
+				<a href="ArtLiterature.html">Художествена литература</a>
+			</li>
+			<li>
+				<a href="KidsLiterature.html">Литература за деца и юноши</a>
+			</li>
+			<li>
+				<a href="Encyclopedia.html">Енциклопедии и справочници</a>
+			</li>
+		</ul>
+	</aside>
+	<section>	      
+		<h2>Център за обслужване на клиенти</h2>
+		<hr/>
+		<article>
+			<address>
+				<p>тел: <a href="tel:02%204604081">02 4604081</a>,<a href="tel:02%204604080">02 4604080</a></p>
+				<p>E-mail:<a href="mailto:service@helikon.bg?subject=free%20chocolate">service@demi.bg</a></p>
+			</address>
+		</article>
+		<div class="clear"></div>
+		<article>
+			<h2>Работно време</h2>
+			<hr/>
+			<p>Приемане на поръчки от <time>08.00</time> до <time>19.00</time></p>
+		</article>
+		<div class="clear"></div>
+		<article>
+			<h2>Форма на запитване</h2>
+			<hr/>
+			<form>
+				<label for="fn">Име</label> 
 				<input  id="fn" name="firstname" type="text" value="" autofocus>
-                <label for="email">Е-мeйл</label> 
-			    <input id="email" name="email-address" type="email" placeholder="name@domain.com"><br/>
-                <p>Запитване:</p>
-                <textarea cols="60" rows="6">Някакъв текст...</textarea> 
+				<label for="email">Е-мeйл</label> 
+				<input id="email" name="email-address" type="email" placeholder="name@domain.com"><br/>
+				<p>Запитване:</p>
+				<textarea cols="60" rows="6">Някакъв текст...</textarea> 
 				<input type="submit" name="submit" value="Изпрати">
 				<input type="reset" name="reset" value="Изчисти"> 
-				</form>
-				</article>
-            </section>
-            <footer>
-                <hr>
-				<a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" title="Facebook" src="Images/facebook-icon.jpg"/></a>
-		        <a href="https://www.skype.com/bg/" target="_blank"><img alt="Skype" title="Skype" src="Images/skype-icon.jpg"/></a>
-		        <a href="https://twitter.com/" target="_blank"><img alt="Twitter" title="Twitter" src="Images/Twitter-icon.png"/></a>
-                <p>Copyright © 2000-2016<br>
-                Всички права запазени</p>
-            </footer>
+			</form>
+		</article>
+	</section>
+	<footer>
+		<hr>
+		<a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" title="Facebook" src="Images/facebook-icon.jpg"/></a>
+		<a href="https://www.skype.com/bg/" target="_blank"><img alt="Skype" title="Skype" src="Images/skype-icon.jpg"/></a>
+		<a href="https://twitter.com/" target="_blank"><img alt="Twitter" title="Twitter" src="Images/Twitter-icon.png"/></a>
+		<p>Copyright © 2000-2016<br>Всички права запазени</p>
+	</footer>
 
 </body>
 </html>
