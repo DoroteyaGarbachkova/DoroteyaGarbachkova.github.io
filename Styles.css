@@ -308,9 +308,6 @@ mark {
 	width: 400px;
 	height: 600px;
 }
-figure+img{
-	width:100px; position: absolute; left: 98px; top:253px; z-index:20;
-}
 .price{
 	font-size:30px;
 }
