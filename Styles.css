@@ -46,8 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 body{
 	margin-left:auto;
 	margin-right:auto;
@@ -154,7 +152,6 @@ ul li ul li a {
 ul li ul li:hover {
 	background: #666;
 }
-
 .search{
 	float:right;
 }
@@ -182,12 +179,12 @@ aside div{
 	position:fixed;
 	float:left;
 	width:100px;
-    margin-top:30px;
+	margin-top:30px;
 }
 aside div>a img{
 	float:left;
 	width:200px;
-    margin-bottom:30px;
+	margin-bottom:30px;
 }
 section{
 	width:900px;
@@ -211,7 +208,6 @@ article a {
 	margin-top:6px;
 	display:inline-block;
 }
-
 article a:hover{
 	background-color: white;
 	color:green;
@@ -312,10 +308,12 @@ mark {
 	width: 400px;
 	height: 600px;
 }
+figure+img{
+	width:100px; position: absolute; left: 98px; top:253px; z-index:20;
+}
 .price{
 	font-size:30px;
 }
-
 .view-eighth figure .mask {
 	background-color: rgba(255, 255, 255, 0.7);
 	top: -200px;
@@ -367,7 +365,6 @@ mark {
 	92% { -webkit-transform: translateY(-12px);}
 	55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
 }
-
 article address{
 	display: block;
 	width: 300px;
@@ -440,7 +437,7 @@ input[type=search]{
 	width:280px;
 	height:35px;
 }
-textarea {
+textarea{
 	width: 100%;
 	height: 80px;
 	padding: 12px 20px;
@@ -454,13 +451,13 @@ textarea {
 textarea:focus{
 	border-color:#4CAF50;
 }
-table {
+table{
 	border-collapse: collapse;
 	width: 100%;
 	margin-top:20px;
 	margin-bottom: 20px;
 }
-td {
+td{
 	text-align: left;
 	padding: 8px;
 }
@@ -501,7 +498,6 @@ footer ul li>a:hover{
 .clear {
 	clear: both;
 }
-
 @-moz-document url-prefix() { 
 	body{
 		background-color:#dcefdc;
@@ -525,6 +521,6 @@ footer ul li>a:hover{
 	}
 	footer a:hover{
 		background-color:#dcefdc;
-    }
+	}
 
 }
