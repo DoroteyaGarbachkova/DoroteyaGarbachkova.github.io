@@ -156,6 +156,7 @@ ul li ul li:hover {
 	float:right;
 }
 aside {
+
 	float: left;
 	width: 203px;
 	margin-top:20px;
@@ -508,5 +509,8 @@ footer ul li>a:hover{
 	footer ul li>a:hover{
 		background-color:#dcefdc;
 	}
+	footer a:hover{
+	background-color:#dcefdc;
+    }
 
 }
