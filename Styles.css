@@ -85,6 +85,8 @@ a:hover{
 header{
 	width:1200px;
 	margin-top:20px;
+	overflow: auto;
+	padding-bottom:21px;
 }
 header img{
 	width:100px;
@@ -93,14 +95,15 @@ header img{
 header h1{
 	width:600px;
 	padding-top:20px;
+	float:left;
 }
 header p{
 	float:right;
 	background-color: #bfbfbf;
-	margin-top:0px;
+	margin-top:35px;
 	margin-right:10px;
 	padding: 10px 15px;
-	border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0 0;
 }
 header p a{
 	color:white;
@@ -180,8 +183,6 @@ aside div{
 	float:left;
 	width:100px;
     margin-top:30px;
-    margin-bottom:20px;
-    z-index:20;
 }
 aside div>a img{
 	float:left;
@@ -191,6 +192,7 @@ aside div>a img{
 section{
 	width:900px;
 	float:right;
+	min-height:520px;
 }
 article ul{
 	list-style-type: none;
@@ -221,7 +223,7 @@ article a:hover{
 article.descbar>a{
 	background-color: #bfbfbf;
 	color:white;
-	border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0 0;
 	padding: 10px 15px;
 }
 article.descbar>a:hover{
@@ -387,7 +389,7 @@ input:focus{
 input.type-text{
 	width:15%;
 }
-input[type=checkbox],[type=radio]{
+input[type=checkbox], [type=radio]{
 	width:18px;
 	height:18px;
 	padding: 6px 10px;
@@ -402,18 +404,18 @@ input[type=submit], input[type=reset] {
 	margin: 4px 2px;
 	cursor: pointer;
 	float:right;
-	border-radius: 4px 4px 4px 4px;
+	border-radius: 4px;
 }
-input[value=Изпрати]{
+article form input[type=submit]{
 	background-color: #4CAF50;
 }
-input[value=Изчисти]{
+article form input[type=reset]{
 	background-color: #bfbfbf;
 }
-input[value=Изчисти]:hover{
+article form input[type=reset]:hover{
 	background-color: #4CAF50;
 }
-input[value=Купи]{
+article>input[type=submit]{
 	background-color: #4CAF50;
 	border: none;
 	color: white;
@@ -424,14 +426,14 @@ input[value=Купи]{
 	float:left;
 	border-radius: 4px 4px 4px 4px;
 }
-input[value=Търси]{
+nav ul li input[type=submit]{
 	float:none;
 	background-color: black;
 	margin-right:10px;
 	margin-top:0px;
-	border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0 0;
 }
-input[value=Търси]:hover{
+nav ul li input[type=submit]:hover{
 	background-color: #4CAF50;
 }
 input[type=search]{
@@ -467,7 +469,6 @@ tr:nth-child(even){
 }
 footer{
 	width:1200px;
-	position:relative;
 	float:left;
 	text-align:center;
 	margin-top:45px;
@@ -523,7 +524,7 @@ footer ul li>a:hover{
 		background-color:#dcefdc;
 	}
 	footer a:hover{
-	background-color:#dcefdc;
+		background-color:#dcefdc;
     }
 
 }
