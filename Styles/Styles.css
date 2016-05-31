@@ -376,11 +376,20 @@ mark {
 	92% { -webkit-transform: translateY(-12px);}
 	55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
 }
-
 article address{
 	display: block;
 	width: 300px;
 	float:left;
+}
+.borderimg{
+	border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../Images/Books.jpg) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/Books.jpg) 30 round; /* Opera 11-12.1 */
+    border-image: url(../Images/Books.jpg) 30 round;
+    width:600px;
+    text-align:center;
+    margin-left: 90px;
 }
 form{
 	width:700px;
