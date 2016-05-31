@@ -482,7 +482,8 @@ article.flexbox p:nth-child(4){
     column-gap: 55px;
 }
 .multiple_column p{
-	
+	font-size: 16px;
+	margin-top: 0px;
 	margin-right:0px;
 }
 .multiple_column select{
