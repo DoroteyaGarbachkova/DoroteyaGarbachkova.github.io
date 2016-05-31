@@ -52,7 +52,7 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	width:1200px;
-	font-family: "Times New Roman", Times, serif;
+	font-family:'Forum', cursive;
 }
 h1{
 	font-size:30px;
@@ -238,6 +238,30 @@ article.descbar>a{
 article.descbar>a:hover{
 	background-color:#4CAF50;
 }
+.animation{
+	color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
 .demo-3 {
 	position:relative;
 	float:left;
@@ -389,7 +413,84 @@ article address{
     border-image: url(../Images/Books.jpg) 30 round;
     width:600px;
     text-align:center;
-    margin-left: 90px;
+    margin-left: 140px;
+    
+}
+article.flexbox{
+	display: -webkit-inline-flex; /* Safari */
+	display: inline-flex;
+ }
+article.flexbox p:nth-child(1){
+	background-image: url(../Images/books_gift.jpg);
+    background-repeat: no-repeat, repeat;
+    padding-top: 10px;
+    padding-left:10px;
+    color:#4CAF50;
+    width:210px;
+ 	height:200px;
+    background-size:210px 205px; 
+ 	border: 1px solid #4CAF50;
+ 	margin-right:30px;
+ 	box-sizing: border-box;
+}
+
+article.flexbox p:nth-child(2){
+	background-image: url(../Images/Happy_birthday.jpeg);
+    background-repeat: no-repeat, repeat;
+    padding-top: 10px;
+    padding-left:10px;
+    color:#4CAF50;
+    width:210px;
+ 	height:200px;
+    background-size:210px 205px; 
+ 	border: 1px solid #4CAF50;
+ 	margin-right:30px;
+ 	box-sizing: border-box;
+}
+article.flexbox p:nth-child(3){
+	background-image: url(../Images/благодаря.jpg);
+    background-repeat: no-repeat, repeat;
+    padding-top: 10px;
+    padding-left:10px;
+    color:white;
+    width:210px;
+ 	height:200px;
+    background-size:210px 205px; 
+ 	border: 1px solid #4CAF50;
+ 	margin-right:30px;
+ 	box-sizing: border-box;
+}
+article.flexbox p:nth-child(4){
+	background-image: url(../Images/graduation-diploma.jpg);
+    background-repeat: no-repeat, repeat;
+    padding-top: 150px;
+    padding-left:150px;
+    color:white;
+    width:210px;
+ 	height:200px;
+    background-size:210px 205px; 
+ 	border: 1px solid #4CAF50;
+ 	margin-right:30px;
+ 	box-sizing: border-box;
+}
+.multiple_column{
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    -webkit-column-gap: 55px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 55px; /* Firefox */
+    column-gap: 55px;
+}
+.multiple_column p{
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.multiple_column select{
+	width:50px;
+	height: 25px;
+	float:left;
+	margin-top:5px;
+	margin-right: 10px;
 }
 form{
 	width:700px;
