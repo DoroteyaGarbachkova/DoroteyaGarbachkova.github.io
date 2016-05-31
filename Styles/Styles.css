@@ -481,9 +481,10 @@ article.flexbox p:nth-child(4){
     -moz-column-gap: 55px; /* Firefox */
     column-gap: 55px;
 }
-/*article.multiple_column+p{
-	margin-top: 0px;
-}*/
+.multiple_column p{
+	
+	margin-right:0px;
+}
 .multiple_column select{
 	width:50px;
 	height: 25px;
