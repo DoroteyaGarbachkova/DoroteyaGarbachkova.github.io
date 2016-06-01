@@ -51,7 +51,7 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	width:1200px;
-	font-family:'Forum', cursive;
+	font-family:"Open Sans", "Segoe UI", Helvetica, Sans-Serif;;
 }
 h1{
 	font-size:30px;
@@ -112,7 +112,6 @@ header>a:visited{
 	color:black;
 	background-color: transparent;
 }
-
 header p a{
 	color:white;
 	padding: 10px 15px;
@@ -153,7 +152,7 @@ ul li ul {
 	position: absolute;
 	width: 200px;
 	display: none;
-	top:34px;
+	top:32px;
 	left:0px;
 }
 ul li ul li { 
