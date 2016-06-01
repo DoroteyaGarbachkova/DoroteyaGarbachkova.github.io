@@ -2,7 +2,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-
+/*reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*body*/
 body{
 	margin-left:auto;
 	margin-right:auto;
@@ -81,6 +81,7 @@ a{
 a:hover{
 	background-color:#4CAF50;
 }
+/*header*/
 header{
 	width:1200px;
 	margin-top:20px;
@@ -104,9 +105,14 @@ header p{
 	padding: 10px 15px;
 	border-radius: 4px 4px 0 0;
 	transition-property: background;
-  	transition-duration: 1s;
-  	transition-timing-function: linear;
+	transition-duration: 1s;
+	transition-timing-function: linear;
 }
+header>a:visited{
+	color:black;
+	background-color: transparent;
+}
+
 header p a{
 	color:white;
 	padding: 10px 15px;
@@ -117,6 +123,7 @@ header p a:hover{
 header p:hover{
 	background-color:#4CAF50;
 }
+/*nav*/
 nav{
 	width:1100px;
 	float:right;
@@ -134,8 +141,8 @@ nav ul li a{
 	padding: 10px 20px;
 	border-radius: 4px 4px 0 0;
 	transition-property: background;
-  	transition-duration: 1s;
-  	transition-timing-function: linear;
+	transition-duration: 1s;
+	transition-timing-function: linear;
 }
 nav ul li{
 	position: relative;
@@ -146,7 +153,7 @@ ul li ul {
 	position: absolute;
 	width: 200px;
 	display: none;
-	top:27px;
+	top:34px;
 	left:0px;
 }
 ul li ul li { 
@@ -159,10 +166,20 @@ ul li ul li a {
 ul li ul li:hover {
 	background: #666;
 }
-
+nav ul li input[type=submit]{
+	float:none;
+	background-color: black;
+	margin-right:10px;
+	margin-top:0px;
+	border-radius: 4px 4px 0 0;
+}
+nav ul li input[type=submit]:hover{
+	background-color: #4CAF50;
+}
 .search{
 	float:right;
 }
+/*aside*/
 aside {
 	float: left;
 	width: 203px;
@@ -183,25 +200,27 @@ aside ul li a{
 	text-decoration: none;
 	border-radius: 4px 4px 0 0;
 	transition-property: background;
-  	transition-duration: 1s;
-  	transition-timing-function: linear;
+	transition-duration: 1s;
+	transition-timing-function: linear;
 }
 aside div{
 	position:fixed;
 	float:left;
 	width:100px;
-    margin-top:30px;
+	margin-top:30px;
 }
 aside div>a img{
 	float:left;
 	width:200px;
-    margin-bottom:30px;
+	margin-bottom:30px;
 }
+/*section*/
 section{
 	width:900px;
 	float:right;
 	min-height:520px;
 }
+/*article*/
 article ul{
 	list-style-type: none;
 	margin-top: 20px;
@@ -210,9 +229,8 @@ article ul{
 article li{
 	display: block;
 	width: 300px;
-	height:300px; 
 	float:left;
-	margin-bottom:85px;
+	margin-bottom:65px;
 }
 article a {
 	background-color:transparent;
@@ -223,6 +241,19 @@ article a {
 article a:hover{
 	background-color: white;
 	color:green;
+}
+.borderimg{
+	border: 10px solid transparent;
+	padding: 15px;
+	-webkit-border-image: url(../Images/Books.jpg) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../Images/Books.jpg) 30 round; /* Opera 11-12.1 */
+	border-image: url(../Images/Books.jpg) 30 round;
+	width:600px;
+	text-align:center;
+	margin:auto;
+}
+.borderimg_width{
+	width:800px;
 }
 .descbar{
 	margin-top:25px;
@@ -239,27 +270,27 @@ article.descbar>a:hover{
 }
 .animation{
 	color: red;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
+	0%   {color: red;}
+	25%  {color: yellow;}
+	50%  {color: blue;}
+	100% {color: green;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
+	0%   {color: red;}
+	25%  {color: yellow;}
+	50%  {color: blue;}
+	100% {color: green;}
 }
 .demo-3 {
 	position:relative;
@@ -275,6 +306,7 @@ article.descbar>a:hover{
 	display:block;
 	position:relative;
 	z-index:10;
+	height:300px;
 }
 .demo-3 figure figcaption {
 	display:block;
@@ -347,7 +379,6 @@ mark {
 .price{
 	font-size:30px;
 }
-
 .view-eighth figure .mask {
 	background-color: rgba(255, 255, 255, 0.7);
 	top: -200px;
@@ -404,81 +435,70 @@ article address{
 	width: 300px;
 	float:left;
 }
-.borderimg{
-	border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(../Images/Books.jpg) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../Images/Books.jpg) 30 round; /* Opera 11-12.1 */
-    border-image: url(../Images/Books.jpg) 30 round;
-    width:600px;
-    text-align:center;
-    margin:auto;
-    
-}
 article.flexbox{
 	display: -webkit-inline-flex; /* Safari */
 	display: inline-flex;
- }
+}
 article.flexbox p:nth-child(1){
 	background-image: url(../Images/books_gift.jpg);
-    background-repeat: no-repeat, repeat;
-    padding-top: 10px;
-    padding-left:10px;
-    color:#4CAF50;
-    width:210px;
- 	height:200px;
-    background-size:210px 205px; 
- 	border: 1px solid #4CAF50;
- 	margin-right:30px;
- 	box-sizing: border-box;
+	background-repeat: no-repeat, repeat;
+	padding-top: 10px;
+	padding-left:10px;
+	color:#4CAF50;
+	width:210px;
+	height:200px;
+	background-size:210px 205px; 
+	border: 1px solid #4CAF50;
+	margin-right:30px;
+	box-sizing: border-box;
 }
 
 article.flexbox p:nth-child(2){
 	background-image: url(../Images/Happy_birthday.jpeg);
-    background-repeat: no-repeat, repeat;
-    padding-top: 10px;
-    padding-left:10px;
-    color:#4CAF50;
-    width:210px;
- 	height:200px;
-    background-size:210px 205px; 
- 	border: 1px solid #4CAF50;
- 	margin-right:30px;
- 	box-sizing: border-box;
+	background-repeat: no-repeat, repeat;
+	padding-top: 10px;
+	padding-left:10px;
+	color:#4CAF50;
+	width:210px;
+	height:200px;
+	background-size:210px 205px; 
+	border: 1px solid #4CAF50;
+	margin-right:30px;
+	box-sizing: border-box;
 }
 article.flexbox p:nth-child(3){
 	background-image: url(../Images/благодаря.jpg);
-    background-repeat: no-repeat, repeat;
-    padding-top: 10px;
-    padding-left:10px;
-    color:white;
-    width:210px;
- 	height:200px;
-    background-size:210px 205px; 
- 	border: 1px solid #4CAF50;
- 	margin-right:30px;
- 	box-sizing: border-box;
+	background-repeat: no-repeat, repeat;
+	padding-top: 10px;
+	padding-left:10px;
+	color:white;
+	width:210px;
+	height:200px;
+	background-size:210px 205px; 
+	border: 1px solid #4CAF50;
+	margin-right:30px;
+	box-sizing: border-box;
 }
 article.flexbox p:nth-child(4){
 	background-image: url(../Images/graduation-diploma.jpg);
-    background-repeat: no-repeat, repeat;
-    padding-top: 150px;
-    padding-left:150px;
-    color:white;
-    width:210px;
- 	height:200px;
-    background-size:210px 205px; 
- 	border: 1px solid #4CAF50;
- 	margin-right:30px;
- 	box-sizing: border-box;
+	background-repeat: no-repeat, repeat;
+	padding-top: 150px;
+	padding-left:150px;
+	color:white;
+	width:210px;
+	height:200px;
+	background-size:210px 205px; 
+	border: 1px solid #4CAF50;
+	margin-right:30px;
+	box-sizing: border-box;
 }
 .multiple_column{
 	-webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
-    column-count: 4;
-    -webkit-column-gap: 55px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 55px; /* Firefox */
-    column-gap: 55px;
+	-moz-column-count: 4; /* Firefox */
+	column-count: 4;
+	-webkit-column-gap: 55px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 55px; /* Firefox */
+	column-gap: 55px;
 }
 .multiple_column p{
 	font-size: 16px;
@@ -486,8 +506,8 @@ article.flexbox p:nth-child(4){
 	margin-right:0px;
 }
 .multiple_column select{
-	width:50px;
-	height: 25px;
+	width:60px;
+	height: 35px;
 	float:left;
 	margin-top:5px;
 	margin-right: 10px;
@@ -545,16 +565,6 @@ article>input[type=submit]{
 	float:left;
 	border-radius: 4px 4px 4px 4px;
 }
-nav ul li input[type=submit]{
-	float:none;
-	background-color: black;
-	margin-right:10px;
-	margin-top:0px;
-	border-radius: 4px 4px 0 0;
-}
-nav ul li input[type=submit]:hover{
-	background-color: #4CAF50;
-}
 input[type=search]{
 	width:280px;
 	height:35px;
@@ -586,6 +596,7 @@ td {
 tr:nth-child(even){
 	background-color: #f2f2f2;
 }
+/*footer*/
 footer{
 	width:1200px;
 	float:left;
@@ -620,7 +631,7 @@ footer ul li>a:hover{
 .clear {
 	clear: both;
 }
-
+/*hack*/
 @-moz-document url-prefix() { 
 	body{
 		background-color:#dcefdc;
@@ -643,6 +654,6 @@ footer ul li>a:hover{
 	}
 	footer a:hover{
 		background-color:#dcefdc;
-    }
+	}
 
 }
