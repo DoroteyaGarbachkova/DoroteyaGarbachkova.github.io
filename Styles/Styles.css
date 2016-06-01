@@ -51,7 +51,7 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	width:1200px;
-	font-family:"Open Sans", "Segoe UI", Helvetica, Sans-Serif;;
+	font-family:"Open Sans", "Segoe UI", Helvetica, Sans-Serif;
 }
 h1{
 	font-size:30px;
@@ -80,6 +80,9 @@ a{
 }
 a:hover{
 	background-color:#4CAF50;
+}
+input{
+	font-family: "Open Sans", "Segoe UI", Helvetica, Sans-Serif;
 }
 /*header*/
 header{
@@ -577,6 +580,7 @@ textarea {
 	border-radius: 4px;
 	background-color: #f8f8f8;
 	font-size: 16px;
+	font-family:"Open Sans", "Segoe UI", Helvetica, Sans-Serif; 
 	resize: none;
 }
 textarea:focus{
@@ -654,5 +658,6 @@ footer ul li>a:hover{
 	footer a:hover{
 		background-color:#dcefdc;
 	}
-
 }
+
+
