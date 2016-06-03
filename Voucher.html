@@ -8,7 +8,7 @@
 	<meta name="robots" content="index">
 	<link rel="stylesheet" href="Styles/Styles.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="Styles/Styles-small.css"/>
+	<link rel="stylesheet" href="Styles/Responsive.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
@@ -22,7 +22,11 @@
 		<p><a href="Login.html">Вход</a></p>
 		
 	</header>
-	<div class="handle">Меню</div>
+	<ul class="menu-mobile">
+		<li class="handle"><img src="Images/hamburger.png"/></li>
+		<li class="login-menu"><a href="Login.html"><img src="Images/login-icon.png"/></a></li>
+		<li class="login-menu"><a href="Registration.html"><img src="Images/registration-icon.png"/></a></li> 
+	</ul>
 	<nav>
 		<ul class="navigation">
 			<li class="sub-menu">
@@ -84,23 +88,21 @@
 	</p>
 	
 	<article class="flexbox">
-		<p>ДеМи</p>
-		<p>ДеМи</p>
-		<p>ДеМи</p>
-		<p>ДеМи</p>
-	</article>
+		<div class="flex-down">	
+			<p class="voucher1">ДеМи</p>
+			<p>Ваучер за подарък</p>
+			<select>
+				<option value="10">10лв.</option>
+				<option value="20">20лв.</option>
+				<option value="30">30лв.</option>
+				<option value="50">50лв.</option>
+				<option value="100">100лв.</option>
+			</select>
+			<input type="submit" name="submit" value="Купи">
+		</div>
 		
-	<article class="multiple_column">
-		<p>Ваучер за подарък</p>
-		<select>
-		    <option value="10">10лв.</option>
-			<option value="20">20лв.</option>
-			<option value="30">30лв.</option>
-			<option value="50">50лв.</option>
-			<option value="100">100лв.</option>
-		</select>
-		<input type="submit" name="submit" value="Купи">
-		<div class="clear"></div>
+		<div class="flex-down">
+		<p class="voucher2">ДеМи</p>
 		<p>Ваучер за Рожден Ден</p>
 		<select>
 			<option value="10">10лв.</option>
@@ -110,8 +112,11 @@
 			<option value="100">100лв.</option>
 		</select>
 		<input type="submit" name="submit" value="Купи">
-		<div class="clear"></div>
-		<p>Ваучер за благодарност</p>
+		</div>
+	
+		<div class="flex-down">
+		<p class="voucher3">ДеМи</p>
+			<p>Ваучер за благодарност</p>
 		<select>
 			<option value="10">10лв.</option>
 			<option value="20">20лв.</option>
@@ -120,7 +125,10 @@
 			<option value="100">100лв.</option>
 		</select>
 		<input type="submit" name="submit" value="Купи">
-		<div class="clear"></div>
+		</div>
+
+		<div class="flex-down">
+		<p class="voucher4">ДеМи</p>
 		<p>Ваучер за дипломиране</p>
 		<select>
 			<option value="10">10лв.</option>
@@ -130,6 +138,15 @@
 			<option value="100">100лв.</option>
 		</select>
 		<input type="submit" name="submit" value="Купи">
+		</div>
+		
+	</article>
+		
+	<article class="multiple_column">
+		
+
+
+	
 	</article>	
 	</section>
 	<footer>
@@ -146,6 +163,9 @@
 			</li>
 			<li>
 				<a href="Aboutus.html">За нас</a>
+			</li>
+			<li>
+				<a href="Login.html">Вход</a>
 			</li>
 		</ul>
 		<a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" title="Facebook" src="Images/facebook-icon.jpg"/></a>

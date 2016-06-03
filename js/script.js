@@ -11,7 +11,7 @@ $( document ).ready(function() {
 			var a = $('.navigation ul');
 
 	        if ( a.length == 1 ) {
-	        	a.addClass('sub-menu-active');
+	        	a.toggleClass('sub-menu-active');
 	        }
 		});
 	}
