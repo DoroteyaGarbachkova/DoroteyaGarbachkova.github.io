@@ -562,6 +562,7 @@ div.flex-down{
 }
 div.flex-down input[type=submit]{
 	margin-top:0;
+	background-color: #4CAF50;
 	
 }
 /*.multiple_column{

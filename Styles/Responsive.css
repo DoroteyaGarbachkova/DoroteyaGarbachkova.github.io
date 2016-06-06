@@ -12,28 +12,23 @@
 	h3{
 		font-size:25px;
 		margin-top:10px;
-		margin-left:10px;
 		margin-bottom:5px;
 	}
 	p{
 		font-size:20px;
 		margin-top:10px;
-		margin-left:10px;
 		margin-bottom:5px;
 	}
 	a{
 		font-size:20px;
 	}
 	form{
-		width:80%;
+		width:100%;
 
 	}
 	input[type=text],[type=email],[type=password],[type=date],[type=tel]{
 		width: 100%;
 
-	}
-	input[type=submit], input[type=reset] {
-		width:20%;
 	}
 	input[type=file]{
 		margin-bottom:10px;
@@ -61,10 +56,14 @@
 	.navigation {
 		display: none;
 	}
+	nav ul{
+		box-sizing:border-box;
+	}
 	nav ul li a  {
 		width: 100%;
 		display: inline-block;
 		font-size:20px;
+		box-sizing:border-box;
 	}
 	nav ul li{
 		box-sizing:border-box;
@@ -164,10 +163,16 @@
 		padding: 5px 10px;
 
 	}
+	.view-eighth{
+		width:40%;
+		margin-left:0;
+		margin-right:20px;
+	
+	}
 	.view-eighth figure .mask {
 		height: 140px;
 		opacity: initial;
-		margin-bottom:15px;
+		line-height:20px;
 
 	}
 	article.flexbox{
@@ -219,6 +224,7 @@
 	input.type-text{
 		width:15%;
 		padding:10px 10px;
+		margin-right:5px;
 	}
 	article>input[type=submit]{
 		width:80px;
@@ -250,14 +256,13 @@
 	h3{
 		font-size:15px;
 		margin-top:10px;
-		margin-left:10px;
 		margin-bottom:5px;
 	}
 	p{
-		font-size:10px;
+		font-size:15px;
 		margin-top:10px;
-		margin-left:10px;
 		margin-bottom:5px;
+
 	}
 	a{
 		font-size:13px;
@@ -266,21 +271,21 @@
 		font-size:80%;
 	}
 	form{
-		width:90%;
+		width:100%;
 		margin-left:0px;
 	}
 	input[type=text],[type=email],[type=password],[type=date],[type=tel]{
 		width: 100%;
 
 	}
-	input[type=submit], input[type=reset] {
-		width:34%;
-	}
 	input[type=file]{
 		margin-bottom:10px;
 	}
 	form textarea{
 		width:100%;
+	}
+	address p{
+		margin-left:0;
 	}
 	table{
 		font-size:80%;
@@ -392,7 +397,8 @@
 	.demo-3 li{
 		width:30%;
 		display:inline;
-		margin-right:35px;
+		margin-left:0;
+		margin-right:55px;
 	}
 	.demo-3 figure img{
 		width:130px;
@@ -421,6 +427,13 @@
 		width:25%;
 		padding: 5px 10px;
 	}
+	.view-eighth{
+		width:40%;
+		margin-left:0;
+		margin-right:20px;
+		margin-bottom: 35px;
+	
+	}
 	.view-eighth figure .mask {
 		height: 140px;
 		opacity: initial;
@@ -438,7 +451,8 @@
 	div.flex-down{
 		width:150px;
 		height:218px;
-		margin-right:0;
+		margin-right:auto;
+		margin-left:auto;
 	}
 	.voucher1{
 		width:130px;
@@ -471,6 +485,7 @@
 	input.type-text{
 		width:15%;
 		padding:5px 5px;
+		margin-right:5px;
 	}
 	article>input[type=submit]{
 		padding: 5px 5px;
