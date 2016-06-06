@@ -218,21 +218,27 @@ input[type=search]{
 	width:280px;
 	height:35px;
 }
+span.plus{
+  display: none;
+  right: 10px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  color:white;
+  padding:10px 10px;
+
+} 
+span.plus::before{
+	content: '+';
+
+
+}
+span.plus::after{
+	content: '-';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 /* content */
 aside {
 	float: left;
@@ -432,8 +438,7 @@ mark {
 .price{
 	font-size:30px;
 }
-.view-eighth figu
-.mask {
+.view-eighth figure.mask {
 	background-color: rgba(255, 255, 255, 0.7);
 	top: -200px;
 	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -495,12 +500,15 @@ article.flexbox{
 	flex-wrap: wrap;
 	margin-top:20px;
 	margin-bottom:20px;
-	width:1000px;
+	width:920px;
 }
 div.flex-down{
 	-webkit-flex-direction: column; /* Safari */
 	flex-direction:         column;
 	margin-right:20px;
+	width:210px;
+	height:318px;
+
 
 }
 .voucher1{
@@ -693,6 +701,17 @@ div.flex-down input[type=submit]{
 		top: 0;
 		display: inline-block;
 		width: 100%;
+	}
+	div.menu-search{
+		display:none;
+	}
+	div.menu-search input[type=search]{
+		width:65%;
+		margin-top:5px;
+	}
+	div.menu-search input[type=submit]{
+		width:30%;
+		padding:10px 5px;
 	}
 
 	/*footer*/

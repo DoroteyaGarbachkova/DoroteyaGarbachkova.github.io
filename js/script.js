@@ -6,7 +6,7 @@ $( document ).ready(function() {
 		});
 
 
-	   $(".navigation .sub-menu>a").on("click", function(e){
+	   $(".navigation .sub-menu>span").on("click", function(e){
 	   		e.preventDefault();
 			var a = $('.navigation ul');
 
@@ -15,6 +15,10 @@ $( document ).ready(function() {
 	        }
 		});
 	}
+	/*if ( $(window).innerWidth() < 480 ) {
+		$(".login-menu img").on("click", function(){
+			$('.menu-search').toggleClass('openSearch');
+		});*/
 
 	/*if ( $(window).innerWidth() >= 480 && $(window).innerWidth() < 1024 ) {
 		adsfsdfsdfsdfsdf
