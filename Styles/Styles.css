@@ -143,7 +143,9 @@ header p a:hover{
 header p:hover{
 	background-color:#4CAF50;
 }
-
+header h1::before{
+	content: "Електронна книжарница ";
+}
 
 
 
@@ -298,6 +300,9 @@ article a:hover{
 	background-color: white;
 	color:green;
 }
+article>p{
+	text-align:justify;
+}
 .borderimg{
 	border: 10px solid transparent;
 	padding: 15px;
@@ -306,7 +311,7 @@ article a:hover{
 	border-image: url(../Images/Books.jpg) 30 round;
 	width:600px;
 	margin:auto;
-}
+	}
 .borderimg_width{
 	width:800px;
 }
@@ -357,7 +362,7 @@ article.descbar>a:hover{
 	position:relative;
 	cursor:pointer;
 }
-.demo-3 li a{
+.demo-3 li>a{
 	display:none;
 }
 .demo-3 figure img {
