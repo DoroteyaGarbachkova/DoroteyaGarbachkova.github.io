@@ -349,7 +349,6 @@
 	}
 	div.menu-search input[type=submit]{
 		width:25%;
-
 	}
 	/*close nav*/
 	/*article*/
@@ -379,7 +378,7 @@
 		margin-right:0 ;
 	}
 	.demo-3 figure img{
-		height:240px;
+		height:245px;
 	}
 	.img {
 		height: 230px;
