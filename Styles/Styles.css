@@ -576,6 +576,7 @@ div.flex-down input[type=submit]{
 	-webkit-column-gap: 55px; 
 	-moz-column-gap: 55px; 
 	column-gap: 55px;
+	height:88px;
 }
 
 form{
