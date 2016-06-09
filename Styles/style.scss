@@ -8,28 +8,28 @@ $border-radius1:4px 4px 0 0;
 $border-radius2:4px;
 
 @mixin headline($size, $mtop, $mbottom, $weight){
-font-size:$size;
-margin-top:$mtop;
-margin-bottom:$mbottom;
-font-weight: $weight;
+	font-size:$size;
+	margin-top:$mtop;
+	margin-bottom:$mbottom;
+	font-weight: $weight;
 }
 @mixin voucher($bimg, $brepeat, $ptop, $pleft, $color, $width, $height, $bsize, $border, $boxs){
-background-image: $bimg;
-background-repeat: $brepeat;
-padding-top: $ptop;
-padding-left:$pleft;
-color:$color;
-width:$width;
-height:$height;
-background-size: $bsize;
-border:$border;
-box-sizing: $boxs;
+	background-image: $bimg;
+	background-repeat: $brepeat;
+	padding-top: $ptop;
+	padding-left:$pleft;
+	color:$color;
+	width:$width;
+	height:$height;
+	background-size: $bsize;
+	border:$border;
+	box-sizing: $boxs;
 }
 @mixin position($display, $width, $float)
 {
-display:$display;
-width:$width;
-float:$float;
+	display:$display;
+	width:$width;
+	float:$float;
 }
 
 
@@ -145,44 +145,44 @@ background-color: #f2f2f2;
 
 /*header*/
 header{
-width:1200px;
-margin-top:20px;
-overflow: auto;
-padding-bottom:21px;
-img{
-	width:100px;
-	float:left;
-}
-h1{
-	width:600px;
-	padding-top:20px;
-	float:left;
-}
-p{
-	float:right;
-	background-color:$second-color;
-	margin-top:35px;
-	margin-right:10px;
-	padding: 10px 15px;
-	border-radius: $border-radius1;
-	transition-property: background;
-	transition-duration: 1s;
-	transition-timing-function: linear;
-	a{
-		color:white;
+	width:1200px;
+	margin-top:20px;
+	overflow: auto;
+	padding-bottom:21px;
+	img{
+		width:100px;
+		float:left;
+	}
+	h1{
+		width:600px;
+		padding-top:20px;
+		float:left;
+	}
+	p{
+		float:right;
+		background-color:$second-color;
+		margin-top:35px;
+		margin-right:10px;
 		padding: 10px 15px;
+		border-radius: $border-radius1;
+		transition-property: background;
+		transition-duration: 1s;
+		transition-timing-function: linear;
+		a{
+			color:white;
+			padding: 10px 15px;
+		}
+		a:hover{
+			background-color:transparent;
+		}
+		&:hover{
+			background-color:$third-color;
+		}
 	}
-	a:hover{
-		background-color:transparent;
+	>a:visited{
+		color:$primary-color;
+		background-color: transparent;
 	}
-	&:hover{
-		background-color:$third-color;
-	}
-}
->a:visited{
-	color:$primary-color;
-	background-color: transparent;
-}
 
 }
 
