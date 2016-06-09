@@ -8,28 +8,28 @@ $border-radius1:4px 4px 0 0;
 $border-radius2:4px;
 
 @mixin headline($size, $mtop, $mbottom, $weight){
-	font-size:$size;
-	margin-top:$mtop;
-	margin-bottom:$mbottom;
-	font-weight: $weight;
+font-size:$size;
+margin-top:$mtop;
+margin-bottom:$mbottom;
+font-weight: $weight;
 }
 @mixin voucher($bimg, $brepeat, $ptop, $pleft, $color, $width, $height, $bsize, $border, $boxs){
-	background-image: $bimg;
-	background-repeat: $brepeat;
-	padding-top: $ptop;
-	padding-left:$pleft;
-	color:$color;
-	width:$width;
-	height:$height;
-	background-size: $bsize;
-	border:$border;
-	box-sizing: $boxs;
+background-image: $bimg;
+background-repeat: $brepeat;
+padding-top: $ptop;
+padding-left:$pleft;
+color:$color;
+width:$width;
+height:$height;
+background-size: $bsize;
+border:$border;
+box-sizing: $boxs;
 }
 @mixin position($display, $width, $float)
 {
-	display:$display;
-	width:$width;
-	float:$float;
+display:$display;
+width:$width;
+float:$float;
 }
 
 
@@ -39,93 +39,99 @@ $border-radius2:4px;
 
 /*obshti*/
 body{
-	margin-left:auto;
-	margin-right:auto;
-	width:1200px;
-	font-family:$font-stack;
+margin-left:auto;
+margin-right:auto;
+width:1200px;
+font-family:$font-stack;
 }
 h1{
-	@include headline(30px,10px,10px,initial)
+@include headline(30px,10px,10px,initial)
 }
 h2{
-	@include headline(25px,10px,10px,bold)
+@include headline(25px,10px,10px,bold)
 }
 h3{
-	@include headline(20px,10px,10px,initial)
+@include headline(20px,10px,10px,initial)
 }
 p{
-	@include headline(17px,20px,20px,initial)
+@include headline(17px,20px,20px,initial)
 }
 a{
-	font-size:20px;
-	text-decoration:none;
+font-size:20px;
+text-decoration:none;
 }
 a:hover{
-	background-color:$third-color;
+background-color:$third-color;
 }
 input{
-	font-family: $font-stack;
+font-family: $font-stack;
 }
 form{
-	width:700px;
+width:700px;
 }
 input[type=text],[type=email],[type=password],[type=date],[type=tel]{
-	width: 100%;
-	padding: 6px 10px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	outline: none;
+width: 100%;
+padding: 6px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+outline: none;
 }
 input:focus{
-	border-color:$third-color;
+border-color:$third-color;
 }
 input.type-text{
-	width:15%;
+width:15%;
 }
-input[type=checkbox], [type=radio]{
-	width:18px;
-	height:18px;
-	padding: 6px 10px;
-	margin: 8px 0;
-	box-sizing: border-box;
+input[type=checkbox]{
+width:18px;
+height:18px;
+padding: 6px 10px;
+margin: 8px 0;
+box-sizing: border-box;
 }
-input[type=submit], input[type=reset] {
-	border:none;
-	color: white;
-	padding: 10px 20px;
-	text-decoration: none;
-	margin: 4px 2px;
-	cursor: pointer;
-	float:right;
-	border-radius: $border-radius2;
+input[type=radio]{
+	@extend input[type=checkbox];
+}
+input[type=submit]{
+border:none;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+float:right;
+border-radius: $border-radius2;
+}
+input[type=reset]{
+	@extend input[type=submit];
 }
 textarea {
-	width: 100%;
-	height: 80px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: $border-radius2;
-	background-color: #f8f8f8;
-	font-size: 16px;
-	font-family:$font-stack; 
-	resize: none;
+width: 100%;
+height: 80px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: $border-radius2;
+background-color: #f8f8f8;
+font-size: 16px;
+font-family:$font-stack; 
+resize: none;
 }
 textarea:focus{
-	border-color:$third-color;
+border-color:$third-color;
 }
 table {
-	border-collapse: collapse;
-	width: 100%;
-	margin-top:20px;
-	margin-bottom: 20px;
+border-collapse: collapse;
+width: 100%;
+margin-top:20px;
+margin-bottom: 20px;
 }
 td{
-	text-align: left;
-	padding: 8px;
+text-align: left;
+padding: 8px;
 }
 tr:nth-child(even){
-	background-color: #f2f2f2;
+background-color: #f2f2f2;
 }
 
 
@@ -139,44 +145,44 @@ tr:nth-child(even){
 
 /*header*/
 header{
-	width:1200px;
-	margin-top:20px;
-	overflow: auto;
-	padding-bottom:21px;
-	img{
-		width:100px;
-		float:left;
-	}
-	h1{
-		width:600px;
-		padding-top:20px;
-		float:left;
-	}
-	p{
-		float:right;
-		background-color:$second-color;
-		margin-top:35px;
-		margin-right:10px;
+width:1200px;
+margin-top:20px;
+overflow: auto;
+padding-bottom:21px;
+img{
+	width:100px;
+	float:left;
+}
+h1{
+	width:600px;
+	padding-top:20px;
+	float:left;
+}
+p{
+	float:right;
+	background-color:$second-color;
+	margin-top:35px;
+	margin-right:10px;
+	padding: 10px 15px;
+	border-radius: $border-radius1;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	a{
+		color:white;
 		padding: 10px 15px;
-		border-radius: $border-radius1;
-		transition-property: background;
-		transition-duration: 1s;
-		transition-timing-function: linear;
-		a{
-			color:white;
-			padding: 10px 15px;
-		}
-		a:hover{
-			background-color:transparent;
-		}
-		&:hover{
-			background-color:$third-color;
-		}
 	}
-	>a:visited{
-		color:$primary-color;
-		background-color: transparent;
+	a:hover{
+		background-color:transparent;
 	}
+	&:hover{
+		background-color:$third-color;
+	}
+}
+>a:visited{
+	color:$primary-color;
+	background-color: transparent;
+}
 
 }
 
@@ -189,78 +195,78 @@ header{
 
 /*nav*/
 nav{
-	@include position(block, 1100px, right)
+@include position(block, 1100px, right)
 }
 nav ul {
-	list-style-type: none;
-	height:50px;
+list-style-type: none;
+height:50px;
 }
 nav li {
-	display: inline-block;
+display: inline-block;
 }
 nav ul li a{
-	background-color:$primary-color;
-	color: white;
-	padding: 10px 20px;
-	border-radius:$border-radius1;
-	transition-property: background;
-	transition-duration: 1s;
-	transition-timing-function: linear;
+background-color:$primary-color;
+color: white;
+padding: 10px 20px;
+border-radius:$border-radius1;
+transition-property: background;
+transition-duration: 1s;
+transition-timing-function: linear;
 }
 nav ul li{
-	position: relative;
-	z-index: 20;
+position: relative;
+z-index: 20;
 }
 ul li:hover ul {display: block;}
 ul li ul {
-	position: absolute;
-	width: 200px;
-	display: none;
-	top:32px;
-	left:0px;
+position: absolute;
+width: 200px;
+display: none;
+top:32px;
+left:0px;
 }
 ul li ul li { 
-	background: #555; 
-	display: block;
+background: #555; 
+display: block;
 }
 ul li ul li a {
-	display:block !important;
+display:block !important;
 } 
 ul li ul li:hover {
-	background: #666;
+background: #666;
 }
 nav ul li input[type=submit]{
-	float:none;
-	background-color: $primary-color;
-	margin-right:10px;
-	margin-top:0px;
-	border-radius: $border-radius1;
+float:none;
+background-color: $primary-color;
+margin-right:10px;
+margin-top:0px;
+border-radius: $border-radius1;
 }
 nav ul li input[type=submit]:hover{
-	background-color:$third-color;
+background-color:$third-color;
 }
 .search{
-	float:right;
+float:right;
 }
 input[type=search]{
-	width:280px;
-	height:35px;
+width:280px;
+height:35px;
 }
 span.plus{
-	display: none;
-	right: 10px;
-	float: right;
-	position: absolute;
-	top: 0px;
-	color:white;
-	padding:10px 10px;
+display: none;
+right: 10px;
+float: right;
+position: absolute;
+top: 0px;
+color:white;
+padding:10px 10px;
 
 } 
 /*span.plus::before{
-	content: '+';
+content: '+';
 }
 span.plus::after{
-	content: '-';
+content: '-';
 
 }*/
 /* content */
@@ -277,7 +283,6 @@ aside{
 			color: white;
 			padding: 10px 20px;
 			margin-bottom:10px;
-			text-decoration: none;
 			border-radius: $border-radius1;
 			transition-property: background;
 			transition-duration: 1s;
@@ -335,7 +340,7 @@ article>p{
 	border-image: url(../Images/Books.jpg) 30 round;
 	width:600px;
 	margin:auto;
-	}
+}
 .borderimg_width{
 	width:800px;
 }
@@ -420,13 +425,13 @@ article.descbar>a:hover{
 	height:100%;
 	padding-left:10px;
 	background-color:$second-color;
-	backface-visibility:hidden;
 	-webkit-transform:rotateY(-180deg);
 	-moz-transform:rotateY(-180deg);
 	transform:rotateY(-180deg);
+	backface-visibility:hidden;
 	-webkit-transition:all .5s;
 	-moz-transition:all .5s;
-	transition:all .5s
+	transition:all .5s 
 }
 .demo-3 figure img {
 	backface-visibility:hidden;
@@ -690,6 +695,7 @@ $icons:(facebook, skype, twitter);
 .clear {
 	clear: both;
 }
+
 /*hack*/
 @-moz-document url-prefix() { 
 	body{

@@ -451,5 +451,8 @@
 	footer li a{
 		font-size:100%;
 	}
+	ul.social-links li{
+		display:inline;
+	}
 	/*close footer*/
 }

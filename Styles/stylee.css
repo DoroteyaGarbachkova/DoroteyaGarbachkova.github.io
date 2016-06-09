@@ -99,7 +99,7 @@ input:focus {
 input.type-text {
   width: 15%; }
 
-input[type=checkbox], [type=radio] {
+input[type=checkbox], input[type=radio] {
   width: 18px;
   height: 18px;
   padding: 6px 10px;
@@ -224,14 +224,14 @@ ul li ul li a {
 ul li ul li:hover {
   background: #666; }
 
-nav ul li input[type=submit] {
+nav ul li input[type=submit], nav ul li input[type=reset] {
   float: none;
   background-color: black;
   margin-right: 10px;
   margin-top: 0px;
   border-radius: 4px 4px 0 0; }
 
-nav ul li input[type=submit]:hover {
+nav ul li input[type=submit]:hover, nav ul li input[type=reset]:hover {
   background-color: #4CAF50; }
 
 .search {
@@ -251,10 +251,10 @@ span.plus {
   padding: 10px 10px; }
 
 /*span.plus::before{
-	content: '+';
+content: '+';
 }
 span.plus::after{
-	content: '-';
+content: '-';
 
 }*/
 /* content */
@@ -271,7 +271,6 @@ aside {
       color: white;
       padding: 10px 20px;
       margin-bottom: 10px;
-      text-decoration: none;
       border-radius: 4px 4px 0 0;
       transition-property: background;
       transition-duration: 1s;
@@ -416,10 +415,10 @@ article.descbar > a:hover {
   height: 100%;
   padding-left: 10px;
   background-color: #bfbfbf;
-  backface-visibility: hidden;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  backface-visibility: hidden;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all 0.5s; }
@@ -598,7 +597,7 @@ div.flex-down {
   border: 1px solid #4CAF50;
   box-sizing: border-box; }
 
-div.flex-down input[type=submit] {
+div.flex-down input[type=submit], div.flex-down input[type=reset] {
   margin-top: 0;
   background-color: #4CAF50; }
 
@@ -610,7 +609,7 @@ div.flex-down input[type=submit] {
   -moz-column-gap: 12px;
   column-gap: 12px; }
 
-article form input[type=submit] {
+article form input[type=submit], article form input[type=reset] {
   background-color: #4CAF50; }
 
 article form input[type=reset] {
@@ -619,7 +618,7 @@ article form input[type=reset] {
 article form input[type=reset]:hover {
   background-color: #4CAF50; }
 
-article > input[type=submit] {
+article > input[type=submit], article > input[type=reset] {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -676,7 +675,7 @@ div.menu-search input[type=search] {
   margin-top: 10px;
   margin-left: 10px; }
 
-div.menu-search input[type=submit] {
+div.menu-search input[type=submit], div.menu-search input[type=reset] {
   padding: 10px 5px;
   margin-top: 10px;
   margin-right: 10px;
