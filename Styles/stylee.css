@@ -150,40 +150,33 @@ header {
   margin-top: 20px;
   overflow: auto;
   padding-bottom: 21px; }
-
-header img {
-  width: 100px;
-  float: left; }
-
-header h1 {
-  width: 600px;
-  padding-top: 20px;
-  float: left; }
-
-header p {
-  float: right;
-  background-color: #bfbfbf;
-  margin-top: 35px;
-  margin-right: 10px;
-  padding: 10px 15px;
-  border-radius: 4px 4px 0 0;
-  transition-property: background;
-  transition-duration: 1s;
-  transition-timing-function: linear; }
-
-header > a:visited {
-  color: black;
-  background-color: transparent; }
-
-header p a {
-  color: white;
-  padding: 10px 15px; }
-
-header p a:hover {
-  background-color: transparent; }
-
-header p:hover {
-  background-color: #4CAF50; }
+  header img {
+    width: 100px;
+    float: left; }
+  header h1 {
+    width: 600px;
+    padding-top: 20px;
+    float: left; }
+  header p {
+    float: right;
+    background-color: #bfbfbf;
+    margin-top: 35px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 4px 4px 0 0;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear; }
+    header p a {
+      color: white;
+      padding: 10px 15px; }
+    header p a:hover {
+      background-color: transparent; }
+    header p:hover {
+      background-color: #4CAF50; }
+  header > a:visited {
+    color: black;
+    background-color: transparent; }
 
 /*nav*/
 nav {
@@ -269,35 +262,29 @@ aside {
   float: left;
   width: 203px;
   margin-top: 20px; }
-
-aside li {
-  display: inline; }
-
-aside li a {
-  display: block;
-  width: 200px; }
-
-aside ul li a {
-  background-color: #bfbfbf;
-  color: white;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  border-radius: 4px 4px 0 0;
-  transition-property: background;
-  transition-duration: 1s;
-  transition-timing-function: linear; }
-
-aside div {
-  position: fixed;
-  float: left;
-  width: 100px;
-  margin-top: 30px; }
-
-aside div > a img {
-  float: left;
-  width: 200px;
-  margin-bottom: 30px; }
+  aside li {
+    display: inline; }
+    aside li a {
+      display: block;
+      width: 200px;
+      background-color: #bfbfbf;
+      color: white;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      border-radius: 4px 4px 0 0;
+      transition-property: background;
+      transition-duration: 1s;
+      transition-timing-function: linear; }
+  aside div {
+    position: fixed;
+    float: left;
+    width: 100px;
+    margin-top: 30px; }
+    aside div > a img {
+      float: left;
+      width: 200px;
+      margin-bottom: 30px; }
 
 /*section*/
 section {
@@ -701,30 +688,40 @@ footer {
   float: left;
   text-align: center;
   margin-top: 45px; }
+  footer ul {
+    margin-bottom: 20px; }
+    footer ul li > a {
+      color: black; }
+      footer ul li > a:hover {
+        color: #4CAF50; }
+    footer ul.social-links li {
+      border-right: none; }
+      footer ul.social-links li a {
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px; }
+  footer li {
+    display: inline;
+    border-right: solid; }
+    footer li a {
+      margin-left: 10px;
+      margin-right: 10px; }
+    footer li:last-child {
+      border-right: none; }
+  footer a:hover {
+    background-color: white; }
 
-footer ul {
-  margin-bottom: 20px; }
+.facebook {
+  background: url("../Images/facebook.png") no-repeat; }
 
-footer li {
-  display: inline;
-  border-right: solid; }
+.skype {
+  background: url("../Images/skype.png") no-repeat; }
 
-footer li a {
-  margin-left: 10px;
-  margin-right: 10px; }
-
-footer li:last-child {
-  border-right: none; }
-
-footer a:hover {
-  background-color: white; }
-
-footer ul li > a {
-  color: black;
-  text-decoration: none; }
-
-footer ul li > a:hover {
-  color: #4CAF50; }
+.twitter {
+  background: url("../Images/twitter.png") no-repeat; }
 
 .clear {
   clear: both; }

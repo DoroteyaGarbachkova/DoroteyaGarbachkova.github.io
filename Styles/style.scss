@@ -143,42 +143,42 @@ header{
 	margin-top:20px;
 	overflow: auto;
 	padding-bottom:21px;
-}
-header img{
-	width:100px;
-	float:left;
-}
-header h1{
-	width:600px;
-	padding-top:20px;
-	float:left;
-}
-header p{
-	float:right;
-	background-color:$second-color;
-	margin-top:35px;
-	margin-right:10px;
-	padding: 10px 15px;
-	border-radius: $border-radius1;
-	transition-property: background;
-	transition-duration: 1s;
-	transition-timing-function: linear;
-}
-header>a:visited{
-	color:$primary-color;
-	background-color: transparent;
-}
-header p a{
-	color:white;
-	padding: 10px 15px;
-}
-header p a:hover{
-	background-color:transparent;
-}
-header p:hover{
-	background-color:$third-color;
-}
+	img{
+		width:100px;
+		float:left;
+	}
+	h1{
+		width:600px;
+		padding-top:20px;
+		float:left;
+	}
+	p{
+		float:right;
+		background-color:$second-color;
+		margin-top:35px;
+		margin-right:10px;
+		padding: 10px 15px;
+		border-radius: $border-radius1;
+		transition-property: background;
+		transition-duration: 1s;
+		transition-timing-function: linear;
+		a{
+			color:white;
+			padding: 10px 15px;
+		}
+		a:hover{
+			background-color:transparent;
+		}
+		&:hover{
+			background-color:$third-color;
+		}
+	}
+	>a:visited{
+		color:$primary-color;
+		background-color: transparent;
+	}
 
+}
 
 
 
@@ -264,40 +264,42 @@ span.plus::after{
 
 }*/
 /* content */
-aside {
+aside{
 	float: left;
 	width: 203px;
 	margin-top:20px;
+	li{
+		display: inline;
+		a{
+			display: block;
+			width: 200px;
+			background-color:$second-color;
+			color: white;
+			padding: 10px 20px;
+			margin-bottom:10px;
+			text-decoration: none;
+			border-radius: $border-radius1;
+			transition-property: background;
+			transition-duration: 1s;
+			transition-timing-function: linear;
+
+		}
+	}
+	div{
+		position:fixed;
+		float:left;
+		width:100px;
+		margin-top:30px;
+		>a img{
+			float:left;
+			width:200px;
+			margin-bottom:30px;
+		}
+	}
 }
-aside li {
-	display: inline;
-}
-aside li a {
-	display: block;
-	width: 200px;
-}
-aside ul li a{
-	background-color:$second-color;
-	color: white;
-	padding: 10px 20px;
-	margin-bottom:10px;
-	text-decoration: none;
-	border-radius: $border-radius1;
-	transition-property: background;
-	transition-duration: 1s;
-	transition-timing-function: linear;
-}
-aside div{
-	position:fixed;
-	float:left;
-	width:100px;
-	margin-top:30px;
-}
-aside div>a img{
-	float:left;
-	width:200px;
-	margin-bottom:30px;
-}
+
+
+
 /*section*/
 section{
 	width:900px;
@@ -639,42 +641,52 @@ div.menu-search input[type=submit]{
 
 
 /*footer*/
-footer{
-	width:1200px;
-	float:left;
-	text-align:center;
-	margin-top:45px;
-}
-footer ul{
-	margin-bottom:20px;
-}
-footer li{
-	display:inline;
-	border-right: solid;
-}
-footer li a{
-	margin-left:10px;
-	margin-right:10px;
-}	
-footer li:last-child{
-	border-right: none;
-}
-footer a:hover{
-	background-color:white;
-}
-footer ul li>a{
-	color:$primary-color;
-	text-decoration:none;
-}
-footer ul li>a:hover{
-	color:$third-color;
-}
+footer {
+	width: 1200px;
+	float: left;
+	text-align: center;
+	margin-top: 45px; 
+	ul{
+		margin-bottom: 20px;
+		li>a{
+			color:$primary-color;
 
+			&:hover{
+				color:$third-color;
+			}
+		}
+		&.social-links li{
+			border-right:none;
+			a{
+				text-align:center;
+				width:32px;
+				height:32px;
+				display:inline-block;
+				margin-left:5px;
+				margin-right:5px;
+			}
+		}
+	}
+	li {
+		display: inline;
+		border-right: solid;
+		a{
+			margin-left:10px;
+			margin-right:10px;
+		}
+		&:last-child{
+			border-right: none;
+		}
+	}
 
-
-
-
-
+	a:hover{
+		background-color:white;
+	}
+}
+$icons:(facebook, skype, twitter);
+@each $social in $icons{
+	.#{$social}{ background:url('../Images/#{$social}.png') no-repeat;}
+}
 .clear {
 	clear: both;
 }
