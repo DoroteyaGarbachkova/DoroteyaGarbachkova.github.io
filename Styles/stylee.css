@@ -792,12 +792,10 @@ footer {
   /*header*/
   header {
     width: 100%; }
-
-  header h1 {
-    width: 60%; }
-
-  header p {
-    display: none; }
+    header h1 {
+      width: 60%; }
+    header p {
+      display: none; }
 
   /*close header*/
   /*nav*/
@@ -994,10 +992,9 @@ footer {
   /*footer*/
   footer {
     width: 100%; }
-
-  footer li {
-    display: inline;
-    width: 100%; }
+    footer li {
+      display: inline;
+      width: 100%; }
 
   /*close footer*/ }
 /* MOBILE */
@@ -1033,12 +1030,10 @@ footer {
   header img {
     width: 20%;
     margin-bottom: 0; }
-
   header h1 {
     width: 20%; }
-
-  header h1::before {
-    content: none; }
+    header h1::before {
+      content: none; }
 
   /*close header*/
   /*nav*/
@@ -1165,10 +1160,8 @@ footer {
   /*footer*/
   footer li {
     display: block; }
-
-  footer li a {
-    font-size: 100%; }
-
+    footer li a {
+      font-size: 100%; }
   footer ul.social-links li {
     display: inline; }
 
