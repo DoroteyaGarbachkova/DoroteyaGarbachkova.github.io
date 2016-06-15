@@ -32,37 +32,35 @@ function rectangleArea() {
     document.getElementById("demo3").innerHTML = s;
 }
 //Problem 4
-function thirdDigit(){
-	var number3;//vuvedenoto chislo
-	number3 = document.getElementById("number3").value;
-	var buffer = parseInt(number3/100);
-	if(buffer %10==7){
-		text="True";
-	}else{
-		text="False";
-	}
-	document.getElementById("demo4").innerHTML = text;
+function thirdDigit() {
+    var number3; //vuvedenoto chislo
+    number3 = document.getElementById("number3").value;
+    var buffer = parseInt(number3 / 100);
+    if (buffer % 10 == 7) {
+        text = "True";
+    } else {
+        text = "False";
+    }
+    document.getElementById("demo4").innerHTML = text;
 }
 //Problem 5
-function thirdBit(){
+function thirdBit() {
     var number5;
-    number5=document.getElementById("number5").value;
+    number5 = document.getElementById("number5").value;
     //console.log((number5 >> 3) &1); 
-    document.getElementById("demo5").innerHTML = (number5 >> 3) &1;
+    document.getElementById("demo5").innerHTML = (number5 >> 3) & 1;
 }
 //Problem 6
-function pointInCircle(){
+function pointInCircle() {
     var x;
     var y;
     x = document.getElementById("x").value;
     y = document.getElementById("y").value;
-    if(Math.pow(x, 2) + Math.pow(y, 2) <=25){
-        console.log(true);
+    if (Math.pow(x, 2) + Math.pow(y, 2) <= 25) {
+        //console.log(true);
         text = "True";
-    }
-    else
-    {
-        console.log(false);
+    } else {
+        //console.log(false);
         text = "False";
     }
     document.getElementById("demo6").innerHTML = text;
@@ -88,18 +86,34 @@ function prime() {
 }
 //Problem 8
 function trapezoidArea() {
-    var a;
-    var b;
-    var h;
-    var s;
+    var a ;
+    var b ;
+    var h1;
+    var s1;
     a = document.getElementById("a").value;
     b = document.getElementById("b").value;
-    h = document.getElementById("h").value;
-    s = (a + b) * h / 2;
-    document.getElementById("demo8").innerHTML = s;
+    h1 = document.getElementById("h1").value;
+    s1 = ((parseInt(a) + parseInt(b)) / 2) * h1;
+    document.getElementById("demo8").innerHTML = s1;
+
 }
+//Problem 9
+function pointInCircleRectangle() {
+    var x1;
+    var y1;
+    x1 = document.getElementById("x1").value;
+    y1 = document.getElementById("y1").value;
 
+    var inCircle = (x1 - 1) * (x1 - 1) + (y1 - 1) * (y1 - 1) <= 9;
+    var outRectangle = x1 >= -1 && x1 <= 5 && y1 >= -1 && y1 <= 1;
 
+    if (inCircle == true && outRectangle == false) {
+        //console.log("yes");
+        text = "Yes";
+    } else {
+        //console.log("no");
+        text = "No";
+    }
+    document.getElementById("demo9").innerHTML = text;
 
-
-
+}
