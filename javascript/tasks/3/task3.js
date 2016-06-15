@@ -174,104 +174,51 @@ theBiggestOfFiveNumbers(-3, -0.5, -1.1, -2, -0.1);
 //Problem 8
 console.log("Problem 8");
 
-function numberAsWords(number) {
-    var result;
-    if (number >= 0 && number <= 9) {
-        switch (number) {
-            case 0:
-                console.log('zero');
-                break;
-            case 1:
-                console.log('one');
-                break;
-            case 2:
-                console.log('two');
-                break;
-            case 4:
-                console.log('four');
-                break;
-            case 5:
-                console.log('five');
-                break;
-            case 6:
-                console.log('six');
-                break;
-            case 7:
-                console.log('seven');
-                break;
-            case 8:
-                console.log('eight');
-                break;
-            case 9:
-                console.log('nine');
-                break;
-        }
-        console.log(result);
+function numberAsWords(n) {
+    var Ones = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve",
+        "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+    var ones = [" ", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+        "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+    var Tens = ["", "", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+    var tens = ["", "", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 
-    } else if (number >= 10 && number <= 19) {
-        switch (number) {
-            case 10:
-                result = "ten";
-                break;
-            case 11:
-                result = "eleven";
-                break;
-            case 12:
-                result = "twelve";
-                break;
-            case 13:
-                result = "thirteen";
-                break;
-            case 14:
-                result = "fourteen";
-                break;
-            case 15:
-                result = "fiveteen";
-                break;
-            case 16:
-                result = "sixteen";
-                break;
-            case 17:
-                result = "seventeen";
-                break;
-            case 18:
-                result = "eighteen";
-                break;
-            case 19:
-                result = "nineteen";
-                break;
-        }
-        console.log(result);
-    } else if (number >= 20 && number < 100) {
-        switch (number) {
-            case 20:
-                result = "twenty";
-                break;
-            case 30:
-                result = "thirty";
-                break;
-            case 40:
-                result = "fourty";
-                break;
-            case 50:
-                result = "fifty";
-                break;
-            case 60:
-                result = "sixty";
-                break;
-            case 70:
-                result = "seventy";
-                break;
-            case 80:
-                result = "eighty";
-                break;
-            case 90:
-                result = "ninety";
-                break;
-        }
-        console.log(result);
+    var n;
+    var result="";
+    if (n >= 0 && n <= 19) {
+        console.log(Ones[n]);
+    }
 
+    if (n >= 20 && n <= 99) {
+        console.log(Tens[Math.floor(n / 10)] + "-" + ones[n % 10]);
+    }
+
+    if (n >= 100) {
+        if (Math.floor(n / 100) >= 0 && Math.floor(n / 100) <= 19) {
+			result+=Ones[Math.floor(n / 100)];
+        }
+
+        if ((n % (Math.floor(n / 100) * 100) <= 19) && (n % (Math.floor(n / 100) * 100) >= 1)) {
+            result+=" hundred and " + ones[n - Math.floor(n / 100) * 100];
+        }
+
+        if ((n % (Math.floor(n / 100) * 100) == 0) || (n % (Math.floor(n / 100) * 100) >= 20) && (n % (Math.floor(n / 100) * 100) <= 99)) {
+            result+=" hundred " + tens[Math.floor(n / 10) % 10] + " " + ones[n % 10];
+        }
+
+        console.log(result);
     }
 }
-numberAsWords(90);
-
+numberAsWords(0);
+numberAsWords(9);
+numberAsWords(10);
+numberAsWords(12);
+numberAsWords(19);
+numberAsWords(25);
+numberAsWords(98);
+numberAsWords(98);
+numberAsWords(273);
+numberAsWords(400);
+numberAsWords(501);
+numberAsWords(617);
+numberAsWords(711);
+numberAsWords(999);
