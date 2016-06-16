@@ -183,26 +183,29 @@ function numberAsWords(n) {
     var tens = ["", "", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 
     var n;
+    var hundred = parseInt(n/ 100);
+	var tenth = parseInt((n / 10) % 10);
+	var unit = parseInt(n % 10);
     var result="";
     if (n >= 0 && n <= 19) {
         console.log(Ones[n]);
     }
 
     if (n >= 20 && n <= 99) {
-        console.log(Tens[Math.floor(n / 10)] + "-" + ones[n % 10]);
+        console.log(Tens[Math.floor(n / 10)] + "-" + ones[unit]);
     }
 
     if (n >= 100) {
-        if (Math.floor(n / 100) >= 0 && Math.floor(n / 100) <= 19) {
-			result+=Ones[Math.floor(n / 100)];
+        if (hundred >= 0 && hundred <= 19) {
+			result+=Ones[hundred];
         }
 
-        if ((n % (Math.floor(n / 100) * 100) <= 19) && (n % (Math.floor(n / 100) * 100) >= 1)) {
-            result+=" hundred and " + ones[n - Math.floor(n / 100) * 100];
+        if ((n % (hundred * 100) <= 19) && (n % (hundred * 100) >= 1)) {
+            result+=" hundred and " + ones[n - hundred * 100];
         }
 
-        if ((n % (Math.floor(n / 100) * 100) == 0) || (n % (Math.floor(n / 100) * 100) >= 20) && (n % (Math.floor(n / 100) * 100) <= 99)) {
-            result+=" hundred " + tens[Math.floor(n / 10) % 10] + " " + ones[n % 10];
+        if ((n % (hundred * 100) == 0) || (n % (hundred * 100) >= 20) && (n % (hundred * 100) <= 99)) {
+            result+=" hundred " + tens[tenth] + " " + ones[unit];
         }
 
         console.log(result);
