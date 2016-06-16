@@ -16,16 +16,9 @@ function numbersNotDivisible(n) {
     }
 }
 numbersNotDivisible(35);
+
 console.log('Problem 3');
 
-/*function minMaxOfSequence(arr) {
-	var arr=[4,8,1,9,23];
-    var max = Math.max.apply(Math, arr);
-    console.log("Max number: " + max + "<br/>");
-    var min = Math.min.apply(Math, arr);
-    console.log("Min number: " + min + "<br/>");
-}
-minMaxOfSequence(arr);*/
 var arr = [4, 8, 1, 9, 23];
 var max = Math.max.apply(Math, arr);
 console.log("Max number: " + max);
@@ -34,3 +27,30 @@ console.log("Min number: " + min);
 
 
 console.log('Problem 4');
+
+function lexicographicallySmallest(obj) {
+    /* var arr = ['window', 'navigator', 'document'];
+	var prop;
+    for (prop of arr) {
+    	console.log(prop);
+    }*/
+    var min = "z";
+    var max = "a";
+    for (var prop in obj) {
+        if (prop > max) {
+            max = prop;
+        }
+        if (prop < min) {
+            min = prop;
+        }
+    }
+
+    console.log("Object: " + obj);
+    console.log("Min: " + min);
+    console.log("Max: " + max);
+  
+}
+
+lexicographicallySmallest(document);
+lexicographicallySmallest(window);
+lexicographicallySmallest(navigator);
