@@ -62,14 +62,14 @@ function occurrencesOfWord(pattern) {
 }
 occurrencesOfWord();
 
-console.log("Problem 4");
+/*console.log("Problem 4");
 
 function numberOfElements(){
     var count;
     count = document.getElementsByTagName('div').length;
     return count;
 }
-console.log(numberOfElements());
+console.log(numberOfElements());*/
 
 
 console.log("Problem 5");
@@ -84,7 +84,7 @@ function appearanceCount() {
 
         }
     }
-    console.log(counter);
+    console.log("Appearance: "+counter+ " times");
 
 }
 appearanceCount();
@@ -108,7 +108,7 @@ function firstLargerThanNeighbours(arr) {
     
     for (var i = 0; i<arr.length; i++) {
         if ((arr[i] > arr[i - 1]) && (arr[i] > arr[i + 1])) {
-            return i;
+            return ("index: "+i);
         } 
     }
     return-1;
