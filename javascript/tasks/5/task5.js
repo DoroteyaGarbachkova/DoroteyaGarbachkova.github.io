@@ -28,48 +28,65 @@ console.log(comp3);
 console.log('Problem 3');
 
 
-var randomElements = [2, 1, 1, 2, 3, 3, 2, 2, 2,2, 1];
-var currentSequence = 1,
-    longestSequence = 1,
-    indexOfLongest = 0;
-
-for (var i = 0; i < randomElements.length - 1; i++) {
-    if (randomElements[i] === randomElements[i + 1]) {
-        currentSequence++;
-
-        if (longestSequence <= currentSequence) {
-            longestSequence = currentSequence;
-            indexOfLongest = randomElements[i];
-            //console.log(i);
+function maximalSequence(arr) {
+    var currentSequence = 1;
+    var longestSequence = 0;
+    var number = 0;
+   
+ for (var i = 1; i < arr.length; i++) {
+        if (arr[i] == arr[i - 1]) {
+            currentSequence++;
+            if (currentSequence > longestSequence) {
+                longestSequence = currentSequence;
+                number = arr[i];
+            }
+        } else {
+            currentSequence = 1;
         }
-    } else {
-        currentSequence = 1;
-
     }
+    var result="";
+    for (var i = 0; i < longestSequence; i++) {
+        result+=number;
+        if (i < longestSequence - 1) {
+            result+=",";
+        }
+    }
+    console.log(result);
 }
-
-console.log(longestSequence + "times- " + indexOfLongest);
+maximalSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
 
 ////////////////////////////////////////////////////////////////////////////
 console.log('Problem 4');
-var randomElements = [3, 2, 3, 4, 2, 2, 4];
-var currentSequence = 1;
-var longestSequence = 1;
-var indexOfLongest;
-for (var i = 0; i < randomElements.length - 1; i++) {
-    if (randomElements[i] < randomElements[i + 1]) {
-        currentSequence++;
-    } else {
-        if (longestSequence < currentSequence) {
-            longestSequence = currentSequence;
-            indexOfLongest = i - currentSequence + 1;
-            //console.log(i);
+
+function maximalIncreasingSequence(arr) {
+    var currentSequence = 1;
+    var longestSequence = 0;
+    var number = 0;
+    
+ for (var i = 1; i < arr.length; i++) {
+        if (arr[i] - arr[i - 1] == 1) {
+
+            number = arr[i - currentSequence];
+            currentSequence++;
+            if (currentSequence > longestSequence) {
+                longestSequence = currentSequence;
+               
+            }
+        } else {
+            currentSequence = 1;
         }
-        currentSequence = 1;
     }
+    var result = "";
+    for (var i = 0; i < longestSequence; i++) {
+        result += number;
+        number++;
+        if (i < longestSequence - 1) {
+            result += ",";
+        }
+    }
+    console.log(result);
 }
-var result = randomElements.slice(indexOfLongest, indexOfLongest + longestSequence);
-console.log(result);
+maximalIncreasingSequence([3, 2, 3, 4, 2, 2, 4]);
 
 ////////////////////////////////////////////////////////////////////////////
 console.log('Problem 5');

@@ -1,17 +1,21 @@
 //Problem 1
 console.log("Problem 1");
 
-function exchangeIfGreater(a2, b2) {
-    var temp = a2;
-    if (a2 > b2) {
-        a2 = b2;
-        b2 = temp;
-        console.log(a2, b2);
+function exchangeIfGreater(a,b) {
+    var greater;
+    if (a > b) {
+        greater = a;
+        a = b;
+        b = greater;
+      
+        
+        console.log(a, b);
     } else {
-        console.log(a2, b2);
+        console.log(a, b);
     }
-
 }
+
+
 exchangeIfGreater(5, 2);
 exchangeIfGreater(3, 4);
 exchangeIfGreater(5.5, 4.5);

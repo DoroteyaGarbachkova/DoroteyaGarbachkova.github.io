@@ -14,7 +14,7 @@ function divisible() {
     var number1;
     number1 = document.getElementById("number1").value;
 
-    if ((number1 % 5 == 0) & (number1 % 7 == 0)) {
+    if ((number1 % 5 == 0) && (number1 % 7 == 0)) {
         text = "True";
     } else {
         text = "False";
@@ -67,22 +67,23 @@ function pointInCircle() {
 }
 //Problem 7
 function prime() {
-    var number4; //vuvedenoto chislo
+    var number4;
+    var isPrime="True";
     number4 = document.getElementById("number4").value;
     if (number4 < 2) {
-        text = "False";
+        isPrime = "False";
     } else {
         for (var i = 2; i < number4; i++) {
             if (number4 % i == 0) {
                 //console.log(false);
-                text = "False";
+                isPrime = "False";
 
             }
         }
-        text = "True";
+        //isPrime = "True";
     }
 
-    document.getElementById("demo7").innerHTML = text;
+    document.getElementById("demo7").innerHTML = isPrime;
 }
 //Problem 8
 function trapezoidArea() {
