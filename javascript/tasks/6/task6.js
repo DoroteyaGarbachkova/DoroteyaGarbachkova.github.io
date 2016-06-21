@@ -84,7 +84,7 @@ function appearanceCount() {
 
         }
     }
-    console.log("Appearance: "+counter+ " times");
+    console.log("Appearance: " + counter + " times");
 
 }
 appearanceCount();
@@ -105,12 +105,12 @@ console.log(largerThanNeighbours(1));
 console.log("Problem 7");
 
 function firstLargerThanNeighbours(arr) {
-    
-    for (var i = 0; i<arr.length; i++) {
+
+    for (var i = 0; i < arr.length; i++) {
         if ((arr[i] > arr[i - 1]) && (arr[i] > arr[i + 1])) {
-            return ("index: "+i);
-        } 
+            return ("index: " + i);
+        }
     }
-    return-1;
+    return -1;
 }
 console.log(firstLargerThanNeighbours([4, 7, 2, 5, 9, 10]));
