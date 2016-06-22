@@ -65,7 +65,7 @@ console.log("Problem 5");
 
 function youngestPerson() {
     var people = [
-        { firstname: 'Gosho', lastname: 'Petrov', age: 32 },
+        { firstname: 'Gosho', lastname: 'Petrov', age: 35 },
         { firstname: 'Ivan', lastname: 'Ivanov', age: 82 },
         { firstname: 'Asq', lastname: 'Georgieva', age: 21 }
     ];
@@ -74,11 +74,12 @@ function youngestPerson() {
     for (var i = 0; i < people.length; i++) {
         if (people[i].age < minAge) {
             minAge = people[i].age;
-            console.log('The youngest person is ' + people[i].firstname + ' ' + people[i].lastname);
+            console.log('The youngest person is: ' + people[i].firstname + ' ' + people[i].lastname);
 
         }
 
     }
+
 }
 youngestPerson();
 
@@ -95,10 +96,9 @@ function group() {
     for (var i = 0; i < people.length; i++) {
         var groupName = people[i].age;
         if (!groups[groupName]) {
-            groups[groupName] = [];
+            groups[groupName] =[];
         }
         groups[groupName].push(people[i].firstname);
-
     }
     people = [];
     for (var groupName in groups) {
