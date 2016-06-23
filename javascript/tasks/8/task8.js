@@ -60,7 +60,7 @@ function underagePeople() {
     }).forEach(function(item) {
         for (var prop in item) {
             person += prop + ': ' + item[prop] + "\n";
-       
+
         }
     });
 
@@ -108,22 +108,27 @@ function youngestPerson() {
 youngestPerson()
 
 console.log("Problem 6")
-var people = [
-    { firstname: 'Gosho', lastname: 'Petrov', age: 35, gender: 'male' },
-    { firstname: 'Ivan', lastname: 'Ivanov', age: 30, gender: 'male' },
-    { firstname: 'Asq', lastname: 'Georgieva', age: 21, gender: 'female' }
-];
 
-var groups = people.reduce(function(gr, person) {
-    var letter = person.firstname[0];
+function groupPeople() {
+    var people = [
+        { firstname: 'Gosho', lastname: 'Petrov', age: 35, gender: 'male' },
+        { firstname: 'Ivan', lastname: 'Ivanov', age: 30, gender: 'male' },
+        { firstname: 'Asq', lastname: 'Georgieva', age: 21, gender: 'female' }
+    ];
 
-    if (!gr[letter]) {
-        gr[letter] = [];
-    }
-    gr[letter].push(person);
-    return gr;
+    var groups = people.reduce(function(gr, person) {
+        var letter = person.firstname[0];
+
+        if (!gr[letter]) {
+            gr[letter] = [];
+        }
+        gr[letter].push(person);
+        return gr;
 
 
-}, {});
+    }, {});
 
-console.log(groups);
+    console.log(groups);
+}
+
+groupPeople()
