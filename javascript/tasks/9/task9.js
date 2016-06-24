@@ -96,13 +96,13 @@ function nbsp() {
 }
 nbsp();
 
-/*console.log('Problem 6')
+console.log('Problem 6')
 
 function extractTextFromHTML() {
     var html = document.getElementById("txt").innerHTML;
     document.getElementById("txt").innerHTML = html.replace(/<[^>]*>/g, "");
 }
-console.log(extractTextFromHTML());*/
+console.log(extractTextFromHTML());
 
 console.log('Problem 7')
 
@@ -174,16 +174,16 @@ console.log('Problem 12')
 
 var template = document.getElementById('list-item').innerHTML;
 var peopleList = "";
-var temp = '';
 function generateList() {
-    var people = [{ name: 'Peter', age: 14 }, { name: "Pavel Nedved", age: 38 }];
+    var people = [{ name: 'Peter', age: 14, gender:'male'}, { name: "Pavel Nedved", age: 38,  gender:'male'}];
     var len = people.length;
 
     for (var i = 0; i < len; i++) {
-        var temp = '';
+        var temp = template;
         peopleList += "<li>";
-        temp = template.replace(/-{name}-/, people[i].name);
+        temp = temp.replace(/-{name}-/, people[i].name);
         temp = temp.replace(/-{age}-/, people[i].age);
+        temp = temp.replace(/-{gender}-/, people[i].gender);
         peopleList += temp;
         peopleList += "</li>";
     }
