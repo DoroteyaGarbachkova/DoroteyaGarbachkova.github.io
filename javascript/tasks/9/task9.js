@@ -95,14 +95,14 @@ function nbsp() {
 
 }
 nbsp();
-
+/*
 console.log('Problem 6')
 
 function extractTextFromHTML() {
     var html = document.getElementById("txt").innerHTML;
     document.getElementById("txt").innerHTML = html.replace(/<[^>]*>/g, "");
 }
-console.log(extractTextFromHTML());
+console.log(extractTextFromHTML());*/
 
 console.log('Problem 7')
 
