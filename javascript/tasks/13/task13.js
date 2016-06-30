@@ -35,7 +35,7 @@ function eventButton(cont) {
 
     try {
         if (typeof(selector) !== 'string' || $(selector).size() === 0) {
-            console.log('invalid selector');
+            console.log('Invalid selector');
         } else {
             console.log('Valid selector');
         }
@@ -47,7 +47,7 @@ function eventButton(cont) {
     $buttons.text("Hide");
     $(document).ready(function() {
         $buttons.click(function() {
-            $(this).next($contents).slideToggle();
+            $(this).next($contents).toggle();
             if ($(this).text() == 'Hide') {
                 $(this).text('Show');
             } else {
