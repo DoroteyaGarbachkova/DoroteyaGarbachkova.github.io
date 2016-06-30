@@ -24,13 +24,19 @@
             .appendTo($div)
 
         for (var i = 0; i < 5; i++) {
-            var div = '<div>Option ' + (i+1) + '</div>';
+            var div = '<div>Option ' + (i + 1) + '</div>';
             $(div).appendTo($div2).addClass(".dropdown-item").attr({
                 "data-value": "value-" + (i + 1),
                 "data-index": "value-" + i
             });
 
         }
+        $(document).ready(function() {
+            $div1.click(function() {
+                $(this).next($div2).toggle();
+
+            });
+        });
         return this;
     }
 }(jQuery));
