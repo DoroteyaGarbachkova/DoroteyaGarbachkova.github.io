@@ -1,47 +1,106 @@
 nav {
-    width: 523px;
-    height: 50px;
-    background-color: #f9f9f9;
+    width: 521px;
+    height: 48px;
+    background-image: url("menu.png");
+    border: 0.5px solid #cfcfcf;
+    border-radius: 10px;
 }
 
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    border:0.5px solid #cfcfcf;
-    border-radius:5px;
+    font-family: 'Arial';
 }
 
 nav ul li {
     float: left;
+    border-right: 0.5px solid #cfcfcf;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    font-size: 21px;
     color: #a7162e;
-    font-size: 22px;
     font-weight: bold;
-    border-right:0.5px solid #cfcfcf;
-  
+    text-decoration: none;
 }
 
 nav ul li:nth-child(1) {
     width: 85px;
-    height: 50px;
-    text-align: center;
+    height: 48px;
 }
 
 nav ul li:nth-child(2) {
     width: 97px;
-    height: 50px;
-    text-align: center;
+    height: 48px;
 }
 
 nav ul li:nth-child(3) {
     width: 206px;
-    height: 50px;
-    text-align: center;
+    height: 48px;
 }
 
 nav ul li:nth-child(4) {
     width: 128px;
-    height: 50px;
-    text-align: center;
+    height: 48px;
     border-right: none;
+}
+
+#button {
+    float: left;
+    width: 100%;
+}
+
+button {
+    margin-top: 30px;
+    padding: 0;
+    width: 192px;
+    height: 47px;
+    background: url(button.png);
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: inset 0px -5px 0px 0px #c5dae5, 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -5px 0px 0px #c5dae5, 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -5px 0 0 #c5dae5, 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+div#image {
+    float: left;
+    width: 100%;
+}
+
+div#bigImage {
+    margin-top: 30px;
+    margin-right: 50px;
+    float: left;
+    width: 500px;
+    height: 400px;
+}
+
+div#bigImage img {
+    box-shadow: 5px 5px 12px #888888;
+}
+
+div#smallImage {
+    float: left;
+    width: 150px;
+    margin-top: 30px;
+    height: 400px;
+}
+
+div#smallImage img {
+    margin-bottom: 50px;
+    display: block;
+    -webkit-box-shadow: 5px 5px 12px #888888;
+    -moz-box-shadow: 5px 5px 12px #888888;
+    box-shadow: 5px 5px 12px #888888;
 }
