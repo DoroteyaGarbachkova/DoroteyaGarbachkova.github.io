@@ -1,0 +1,57 @@
+#site{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#wrapper{
+	background-image:url('../images/carousel.png');
+	background-repeat:no-repeat;
+	background-size: 95%;
+	background-position: center;
+	background-color:#ebebe6;
+	width: 100%;
+	height: 660px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+nav{
+	width:100%;
+	height: 60px;
+	background-color: #333333;
+	color:#ffffff;
+}
+nav img,h1,ul,div{
+	float:left;
+}
+nav li{
+	float:left;
+}
+section{
+	width:60%;
+	margin-top:1%;
+	margin-left:20%;
+	margin-right:20%;
+}
+#article ul li{
+	width:19%;
+	height:393px;
+	float: left;
+	margin-right:1%;
+	list-style: none;
+}
+#article ul li img{
+	width:386px;
+	height:251px;
+}
+#goods ul li{
+	width:11%;
+	height:20%;
+	float: left;
+	margin-right:1%;
+	list-style: none;
+}
+#goods ul li img{
+	width:225px;
+	height:226px;
+}
