@@ -3,75 +3,125 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!--     <script src="responsiveslides.min.js"></script> -->
     <title>Document</title>
 </head>
 
 <body>
-    <div id="site">
+    <div>
         <div id="wrapper">
             <nav>
-                <img src="images/login.png" />
-                <h1><strong>FLATSPOT</strong></h1>
-                <ul>
-                    <li>Latest</li>
-                    <li>Shoes</li>
-                    <li>Clothing</li>
-                    <li>Brands</li>
-                    <li>Skateboarding</li>
-                    <li>Journal</li>
-                </ul>
-                <div>
-                    <img/>
-                    <img/>
+                <div id="login"><img src="images/user.png" /></div>
+                <div id="menu">
+                    <img src="images/logo.png" />
+                    <ul>
+                        <li><a>Latest</a></li>
+                        <li><a>Shoes</a></li>
+                        <li><a>Clothing</a></li>
+                        <li><a>Brands</a></li>
+                        <li><a>Skateboarding</a></li>
+                        <li><a>Journal</a></li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <img class="img_search" src="images/search.png" alt="search" />
+                    <div class="search">
+                        <h1>Search Item</h1>
+                        <hr>
+                        <ul>
+                            <li>Palace</li>
+                            <li>Palace T-Shirt</li>
+                            <li>Palace All Terrain Bucket Hat</li>
+                            <li>Palace Tri-Line Yard T-Shirt</li>
+                            <li>Palace Cotch Jacket</li>
+                            <li>Palace Clothing</li>
+                        </ul>
+                    </div>
+                    <img src="images/basket.png" />
                 </div>
             </nav>
+            <div id="carousel">
+            </div>
+            <section>
+                <article id="article">
+                    <ul>
+                        <li>
+                            <img src="images/clothes.jpg" />
+                            <p>FEATURE</p>
+                            <h3>SELECTED OUTFIT GRID</h3>
+                            <P>Weekly selected outfit grid via the Flatspot instagram. Shop the items in this collection here. <a href="#">Read more</a></P>
+                        </li>
+                        <li>
+                            <img src="images/men.jpg" />
+                            <p>FEATURE</p>
+                            <h3>Raised By Wolves Lorem Ipsum Dolor Amit Ipsum Dolor</h3>
+                            <P>A video and selected photos from the Less Fall / Winter collection lookbook. This season features a wide selection of... <a href="#">Read more</a></P>
+                        </li>
+                        <li>
+                            <img src="images/car.jpg" />
+                            <p>BLOG</p>
+                            <h3>Raised By Wolves Lorem Ipsum Dolor Amit Ipsum Dolor</h3>
+                            <P>A video and selected photos from the Less Fall / Winter collection lookbook. This season features a wide selection of...<a href="#">Read more..</a></P>
+                        </li>
+                    </ul>
+                </article>
+                <div class="clear"></div>
+                <article id="goods">
+                    <ul>
+                        <li>
+                            <img src="images/sneakers.jpg" />
+                            <p>Huf</p>
+                            <p>Wu-Tang Plantlife Socks</p>
+                        </li>
+                        <li>
+                            <img src="images/T-shirt.jpg" />
+                            <p>Huf</p>
+                            <p>Wu-Tang Plantlife Socks</p>
+                        </li>
+                        <li>
+                            <img src="images/sneaker.jpg" />
+                            <p>Huf</p>
+                            <p>Wu-Tang Plantlife Socks</p>
+                        </li>
+                        <li>
+                            <img src="images/skate.jpg" />
+                            <p>Huf</p>
+                            <p>Wu-Tang Plantlife Socks</p>
+                        </li>
+                        <li>
+                            <img src="images/socks.jpg" />
+                            <p>Huf</p>
+                            <p>Wu-Tang Plantlife Socks</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <footer>
+                <hr>
+                <div id="footer">
+                    <img src="images/social.png" />
+                    <input type="text" value="Sign Up to Newsletter" />
+                </div>
+                <div id="list">
+                    <ul>
+                        <li><a>About us</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Shipping</a></li>
+                        <li><a>Retuns/Exchanges</a></li>
+                        <li><a>FAQs</a></li>
+                        <li><a>Currency:£|$|€</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p>Terms and Conditions | Privacy | © Flatspot 2014 | Site Designe</p>
+            </footer>
         </div>
-        <section>
-            <article id="article">
-                <ul>
-                    <li>
-                        <img src="images/clothes.png" />
-                        <p>FEATURE</p>
-                        <h3>SELECTED OUTFIT GRID</h3>
-                        <P>Weekly selected outfit grid via the Flatspot instagram. Shop the items in this collection here. Read more..</P>
-                    </li>
-                    <li>
-                        <img src="images/clothes.png" />
-                        <p>FEATURE</p>
-                        <h3>SELECTED OUTFIT GRID</h3>
-                        <P>Weekly selected outfit grid via the Flatspot instagram. Shop the items in this collection here. Read more..</P>
-                    </li>
-                    <li>
-                        <img src="images/clothes.png" />
-                        <p>FEATURE</p>
-                        <h3>SELECTED OUTFIT GRID</h3>
-                        <P>Weekly selected outfit grid via the Flatspot instagram. Shop the items in this collection here. Read more..</P>
-                    </li>
-                </ul>
-            </article>
-            <article id="goods">
-                <ul>
-                    <li>
-                        <img src="images/sneakers.png" />
-                        <h3>SELECTED OUTFIT GRID</h3>
-                    </li>
-                    <li>
-                        <img src="images/sneakers.png" />
-                        <h3>SELECTED OUTFIT GRID</h3>
-                    </li>
-                    <li>
-                        <img src="images/sneakers.png" />
-                        <h3>SELECTED OUTFIT GRID</h3>
-                    </li>
-                    <li>
-                        <img src="images/sneakers.png" />
-                        <h3>SELECTED OUTFIT GRID</h3>
-                    </li>
-                </ul>
-            </article>
-        </section>
     </div>
+    <script src="js/task17.js"></script>
 </body>
 
 </html>
