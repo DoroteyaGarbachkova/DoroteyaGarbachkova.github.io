@@ -22,4 +22,7 @@
       $('.search').toggle();
      /* $('.navigation').removeClass('menu-active');*/
     });
-
+$("#brands").on("click", function(){
+      $('#listBrands').toggle();
+     /* $('.navigation').removeClass('menu-active');*/
+    });
