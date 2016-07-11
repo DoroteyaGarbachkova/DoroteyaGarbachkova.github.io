@@ -1,28 +1,20 @@
+ $("#searchImg").mouseover(function() {
+     $('.search').toggle("slow");
+ });
+ $("#searchImg").mouseout(function() {
+     $('.search').toggle("slow");
 
-/*  $(function() {
-    $(".rslides").responsiveSlides({
-     auto: true,             // Boolean: Animate automatically, true or false
-  speed: 500,            // Integer: Speed of the transition, in milliseconds
-  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-  pager: false,           // Boolean: Show pager, true or false
-  nav: false,             // Boolean: Show navigation, true or false
-  random: false,          // Boolean: Randomize the order of the slides, true or false
-  pause: false,           // Boolean: Pause on hover, true or false
-  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-  prevText: "Previous",   // String: Text for the "previous" button
-  nextText: "Next",       // String: Text for the "next" button
-  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-  manualControls: "",     // Selector: Declare custom pager navigation
-  namespace: "rslides",   // String: Change the default namespace used
-  
-  });
-  });*/
-   $(".img_search").on("click", function(){
-      $('.search').toggle();
-     /* $('.navigation').removeClass('menu-active');*/
-    });
-$("#brands").on("click", function(){
-      $('#listBrands').toggle();
-     /* $('.navigation').removeClass('menu-active');*/
-    });
+ });
+
+
+/*
+
+ $("#brands").mouseover(function() {
+     $('#listBrands').toggle();
+ });
+$("#brands").mouseout(function() {
+     $('#listBrands').toggle();
+    
+ });
+
+*/
