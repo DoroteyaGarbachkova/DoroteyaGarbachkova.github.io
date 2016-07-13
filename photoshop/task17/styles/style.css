@@ -89,11 +89,6 @@ video {
     vertical-align: baseline;
 }
 
-
-
-
-
-
 @font-face {
     font-family: "NeuzeitS";
     src: url("../Fonts/Neuzeit_S_LT_Book.ttf") format("truetype");
@@ -103,22 +98,6 @@ video {
     font-family: "Myriad Pro";
     src: url("../Fonts/Myriad-Pro_31655.ttf") format("truetype");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* HTML5 display-role reset for older browsers */
@@ -190,7 +169,6 @@ nav {
     position: absolute;
     top: 19px;
     left: 19px;
-  
 }
 
 #menu {
@@ -198,7 +176,6 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #menu img {
@@ -225,11 +202,9 @@ nav #menu> ul li {
     line-height: 50px;
 }
 
-
 nav #menu li .nav-dropdown {
     display: none;
 }
-
 
 nav #menu li:hover .nav-dropdown {
     display: block;
@@ -244,7 +219,6 @@ nav #menu li a {
     margin-right: 21px;
     margin-left: 21px;
     text-decoration: none;
-  
 }
 
 nav #menu li:last-child {
@@ -261,12 +235,14 @@ div#listBrands {
     overflow: auto;
     opacity: 1;
 }
-div#allBrands{
-    width:800px;
-    height:305px;
-    margin-left:40%;
+
+div#allBrands {
+    width: 800px;
+    height: 305px;
+    margin-left: 40%;
     overflow: auto;
 }
+
 div#listBrands h1:first-child {
     font-size: 15px;
     font-family: "NeuzeitS";
@@ -274,7 +250,6 @@ div#listBrands h1:first-child {
     text-transform: uppercase;
     line-height: 1.733;
     text-align: left;
-
 }
 
 div#listBrands h1:last-child {
@@ -290,7 +265,6 @@ div#listBrands ul {
     column-count: 3;
     column-gap: 40px;
     overflow: auto;
-
 }
 
 div#listBrands ul li {
@@ -343,8 +317,8 @@ div#listBrands ul li {
     display: none;
     position: absolute;
     top: 59px;
-    right:0;
-    width:1015px;
+    right: 0;
+    width: 1015px;
     height: 265px;
     color: black;
     background-color: #00e1f5;
@@ -373,11 +347,17 @@ div#listBrands ul li {
     text-align: left;
 }
 
+
+/* carousel */
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    width: 95%;
+    width: 95.4%;
     margin: auto;
 }
+
+
+/* section */
 
 section {
     max-width: 1200px;
@@ -388,7 +368,7 @@ section {
 }
 
 section article ul {
-    margin-bottom: 3%;
+    margin-bottom: 2.96%;
 }
 
 #article ul {
@@ -398,9 +378,9 @@ section article ul {
 }
 
 #article ul li {
-    width: 32%;
+    width: 32.16%;
     float: left;
-    margin-right: 1.3%;
+    margin-right: 1.76%;
     list-style-type: none;
 }
 
@@ -412,26 +392,48 @@ section article ul {
     width: 100%;
 }
 
-#article ul li p,
-h3 {
-    font-size: 100.3%;
+#article ul li p:nth-child(2) {
+    font-size: 13px;
     font-family: "NeuzeitS";
     color: rgb(150, 150, 150);
+    line-height: 1.615;
     text-align: left;
-    line-height: 1.215;
-    margin-top: 2%;
-    margin-bottom: 0;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }
 
-#article ul li h3 {
+#article ul li h3:nth-child(3) {
     color: black;
-    font-size: 137.5%;
+    font-size: 16px;
     margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 23px;
+    word-spacing: 2.6px;
+    font-family: "NeuzeitS";
+}
+
+#article ul li p:nth-child(4) {
+    font-size: 14px;
+    font-family: "NeuzeitS";
+    color: rgb(150, 150, 150);
+    line-height: 1.610;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-top: 5px;
 }
 
 #article ul li a {
     color: #00e1f5;
     text-decoration: none;
+}
+
+#article ul li a img {
+    width: 12px;
+    height: 9px;
+    margin-left: 6px;
 }
 
 #goods ul {
@@ -441,9 +443,9 @@ h3 {
 }
 
 #goods ul li {
-    width: 19%;
+    width: 18.67%;
     float: left;
-    margin-right: 1%;
+    margin-right: 1.66%;
     list-style: none;
 }
 
@@ -455,13 +457,25 @@ h3 {
     width: 100%;
 }
 
-#goods ul li p {
+#goods > ul > li p:nth-child(3){
     font-size: 14px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
     line-height: 1.286;
+    letter-spacing: 2px;
+    word-spacing: 2.6px;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
-
+#goods > ul > li p:nth-child(4){
+    font-size: 14px;
+    font-family: "NeuzeitS";
+    color: rgb(50, 50, 50);
+    line-height: 1.286;
+    letter-spacing: 1.1px;
+    word-spacing: 2.6px;
+  
+}
 #goods ul li span {
     float: right;
     font-size: 1.2em;
@@ -469,122 +483,135 @@ h3 {
     color: rgb(150, 150, 150);
     line-height: 1.286;
     text-align: right;
+    margin-top: 10px;
 }
+/* footer */
 
 footer {
     max-width: 1200px;
-    min-height: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:4.5%;
 }
 
 #footer {
     width: 58%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.6%;
-    margin-bottom: 3%;
+    margin-top: 3.1%;
+    margin-bottom: 2.9%;
 }
 
 #social {
-    width: 47%;
+    width:327px;
     display: inline-block;
-    margin-top: 2%;
+    margin-top: 2.5%;
 }
 
 #social div {
     float: left;
-    padding-left: 46px;
-}
 
+}
 #facebook {
     background: url('../images/social.png') no-repeat 0 0;
     width: 11px;
     height: 22px;
+    padding-left: 46px;
 }
 
 #facebook:hover {
     background: url('../images/social-color.png') no-repeat 0 0;
     width: 11px;
     height: 22px;
+    padding-left: 46px;
 }
 
 #tweeter {
-    background: url('../images/social.png') no-repeat -45px -2px;
+    background: url('../images/social.png') no-repeat -45px 0px;
     width: 23px;
-    height: 18px;
+    height: 22px;
+    padding-left: 54px;
 }
 
 #tweeter:hover {
-    background: url('../images/social-color.png') no-repeat -45px -2px;
+    background: url('../images/social-color.png') no-repeat -45px 0px;
     width: 23px;
-    height: 18px;
-}
+    height: 22px;
+    padding-left: 54px;
+} 
+
 
 #instagram {
-    background: url('../images/social.png') no-repeat -100px -1px;
+    background: url('../images/social.png') no-repeat -100px -0px;
     width: 20px;
-    height: 20px;
+    height: 22px;
+    padding-left: 50px;
 }
 
 #instagram:hover {
-    background: url('../images/social-color.png') no-repeat -100px -1px;
+    background: url('../images/social-color.png') no-repeat -100px 0px;
     width: 20px;
-    height: 20px;
+    height: 22px;
+    padding-left: 50px;
 }
 
 #pinterest {
     background: url('../images/social.png') no-repeat -149px 0;
     width: 23px;
     height: 22px;
+    padding-left: 58px;
 }
 
 #pinterest:hover {
     background: url('../images/social-color.png') no-repeat -149px 0;
     width: 23px;
     height: 22px;
-}
-
+    padding-left: 58px;
+} 
 #tweeter2 {
-    background: url('../images/social.png') no-repeat -194px 0;
+    background: url('../images/social.png') no-repeat -208px 0;
     width: 12px;
     height: 22px;
+    padding-left: 46px;
 }
 
 #tweeter2:hover {
-    background: url('../images/social-color.png') no-repeat -194px 0;
+    background: url('../images/social-color.png') no-repeat -208px 0;
     width: 12px;
     height: 22px;
+    padding-left: 46px;
 }
 
 #sv {
-    background: url('../images/social.png') no-repeat -235px -3px;
+    background: url('../images/social.png') no-repeat -253px 0px;
     width: 29px;
-    height: 16px;
+    height: 22px;
+    padding-left: 55px;
 }
 
 #sv:hover {
-    background: url('../images/social-color.png') no-repeat -235px -3px;
+    background: url('../images/social-color.png') no-repeat -253px 0px;
     width: 29px;
-    height: 16px;
+    height: 22px;
+    padding-left: 55px;
 }
 
 #b {
-    background: url('../images/social.png') no-repeat -281px 0;
+    background: url('../images/social.png') no-repeat -309px 0;
     width: 18px;
     height: 22px;
 }
 
 #b:hover {
-    background: url('../images/social-color.png') no-repeat -281px 0;
+    background: url('../images/social-color.png') no-repeat -309px 0;
     width: 18px;
     height: 22px;
-}
+} 
 
 #footer input {
-    width: 39%;
-    height: 39px;
-    margin-left: 9.5%;
+    width: 290px;
+    height: 38px;
+    margin-left: 10.5%;
     background: url(../images/black-arrow.png) no-repeat;
     background-position: right 5% top 50%;
 }
@@ -603,17 +630,20 @@ input[value] {
     letter-spacing: 1px;
 }
 
-footer #list {
-    width: 68.5%;
+footer #list{
+    width: 822px;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
+    margin-bottom:4.3%;
+    
 }
-
+footer #list ul{
+    overflow:auto;
+}
 footer #list ul li {
     float: left;
     list-style-type: none;
-    margin-right: 5.5%;
+    margin-right: 54px;
 }
 
 footer #list ul li:last-child {
@@ -625,9 +655,9 @@ footer #list ul li a {
     font-size: 14px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
-    line-height: 1.286;
+    word-spacing:3px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
 }
 
 footer #list ul li ul {
@@ -651,16 +681,18 @@ footer #list ul li ul li:last-child {
 }
 
 footer #footerTerms {
-    margin-top: 3%;
-    width: 40.14%;
+    margin-top: 4.3%;
+    width: 461px;
     margin-left: auto;
     margin-right: auto;
+    overflow:auto;
 }
 
 footer #footerTerms li {
     float: left;
     color: #b2b2b2;
     letter-spacing: 1px;
+    word-spacing: 1.3px;
     font-size: 11px;
     border-right: 1px solid #b2b2b2;
     padding-left: 7px;
@@ -680,11 +712,11 @@ footer #footerTerms li:last-child {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 43px;
+    margin-top: 37px;
 }
 
 #belowFooter ul {
-    width: 53%;
+    width:726px;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
@@ -699,8 +731,9 @@ footer #footerTerms li:last-child {
     line-height: 1.523;
     text-align: center;
     border-right: 1px solid black;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+    letter-spacing: 1px;
 }
 
 #belowFooter ul li:first-child {
