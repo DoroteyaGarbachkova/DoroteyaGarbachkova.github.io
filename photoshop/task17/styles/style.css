@@ -143,6 +143,9 @@ table {
     border-spacing: 0;
 }
 
+
+/* site */
+
 #wrapper {
     width: 100%;
     margin-left: auto;
@@ -166,9 +169,10 @@ nav {
 }
 
 #login img {
-    position: absolute;
-    top: 19px;
-    left: 19px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 #menu {
@@ -182,10 +186,10 @@ nav {
     width: 19.83%;
     float: left;
     padding-left: 8.33%;
-    padding-top: 12px;
+    padding-top: 16px;
 }
 
-#menu ul {
+#menu> ul {
     font-size: 1.05em;
     font-family: "NeuzeitS";
     color: rgb(255, 255, 255);
@@ -193,13 +197,41 @@ nav {
     width: 56.25%;
     display: inline-block;
     padding-left: 4.16%;
+    overflow: auto;
+    height: 59px;
+    margin-bottom: 0;
 }
 
 nav #menu> ul li {
     float: left;
     list-style-type: none;
-    border-right: 1px solid #2c2c2c;
     line-height: 50px;
+    height: 59px;
+}
+
+#menu > ul > li:nth-child(-n+6):after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: #000000;
+    display: inline-block;
+}
+
+#menu > ul > li:nth-child(6):after {
+    display: none;
+    padding-right: 0;
+}
+
+
+nav #menu li a {
+    font-size: 1.063em;
+    font-family: "NeuzeitS";
+    color: rgb(255, 255, 255);
+    line-height: 3.496;
+    text-align: left;
+    margin-right: 21px;
+    margin-left: 21px;
+    text-decoration: none;
 }
 
 nav #menu li .nav-dropdown {
@@ -210,22 +242,7 @@ nav #menu li:hover .nav-dropdown {
     display: block;
 }
 
-nav #menu li a {
-    font-size: 1.063em;
-    font-family: "NeuzeitS";
-    color: rgb(255, 255, 255);
-    line-height: 0.896;
-    text-align: left;
-    margin-right: 21px;
-    margin-left: 21px;
-    text-decoration: none;
-}
-
-nav #menu li:last-child {
-    border-right: none;
-}
-
-div#listBrands {
+div.nav-dropdown {
     position: absolute;
     top: 59px;
     left: 0;
@@ -235,12 +252,14 @@ div#listBrands {
     overflow: auto;
     opacity: 1;
 }
-
+/* dropdown-menu brands */
 div#allBrands {
-    width: 800px;
-    height: 305px;
-    margin-left: 40%;
+    width: 810px;
+    height: 290px;
+    margin-left: 722px;
     overflow: auto;
+    padding-left: 20px;
+    padding-right: 215px;
 }
 
 div#listBrands h1:first-child {
@@ -248,8 +267,10 @@ div#listBrands h1:first-child {
     font-family: "NeuzeitS";
     color: rgb(0, 150, 165);
     text-transform: uppercase;
-    line-height: 1.733;
+    line-height: 0.733;
     text-align: left;
+    border-bottom: 1px solid #1cb1c5;
+    padding-bottom: 17px;
 }
 
 div#listBrands h1:last-child {
@@ -257,33 +278,54 @@ div#listBrands h1:last-child {
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
     text-transform: uppercase;
-    line-height: 1.529;
+    line-height: 1.733;
     text-align: left;
+    border-top: 1px solid #1cb1c5;
+    padding-top: 17px;
 }
 
-div#listBrands ul {
+div#listBrands h1 span {
+    color: #388196;
+    margin-left: 5px;
+}
+
+#listBrands ul {
     column-count: 3;
-    column-gap: 40px;
+    column-gap: 34px;
     overflow: auto;
 }
 
 div#listBrands ul li {
-    border-right: none;
+    content: none;
     float: none;
     font-size: 17px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
     line-height: 1.529;
     text-align: left;
+    height: initial;
 }
+/*end dropdown-menu brands */
+/* dropdown-menu journal */
+#journal li{
+   font-size: 17px;
+  font-family: "NeuzeitS";
+  color: rgb(50, 50, 50);
+  line-height: 1.529;
+  text-align: left;
+  width: 78px;
+  height: initial;
+  display:block;
+}
+/* search */
 
-#search {
+#searchBasket {
     width: 57px;
     float: right;
     display: block;
 }
 
-#search img {
+#searchBasket img {
     display: block;
     position: absolute;
     top: 19px;
@@ -302,24 +344,13 @@ div#listBrands ul li {
     margin: auto;
 }
 
-#basket {
-    background: url('../images/search.png') no-repeat -35px -2px;
-    width: 22px;
-    height: 22px;
-    display: block;
-    position: absolute;
-    top: 19px;
-    right: 14px;
-    margin: auto;
-}
-
 .search {
     display: none;
     position: absolute;
     top: 59px;
     right: 0;
     width: 1015px;
-    height: 265px;
+    height: 250px;
     color: black;
     background-color: #00e1f5;
     overflow: auto;
@@ -333,10 +364,24 @@ div#listBrands ul li {
     line-height: 1.2;
     text-align: left;
     margin-left: 21px;
+    display: inline-block;
+}
+
+#search-close_open {
+    background: url('../images/search-close_open.png') no-repeat;
+    float: right;
+    width: 108px;
+    height: 32px;
+    margin-top:25px;
+    margin-right:23px;
 }
 
 .search ul {
-    margin-left: 21px;
+    padding-left: 21px;
+    border-top: 1px solid #1cb1c5;
+    width: 100%;
+    padding-top: 12px;
+    margin-top: 12px;
 }
 
 .search ul li {
@@ -348,12 +393,35 @@ div#listBrands ul li {
 }
 
 
+/*end search */
+
+#basket {
+    background: url('../images/search.png') no-repeat -35px -2px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    margin: auto;
+}
+
+
 /* carousel */
+
+#carousel {
+    background-color: #ebebe6;
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    width: 95.4%;
-    margin: auto;
+    width: 94.6%;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.carousel-control {
+    color: red;
 }
 
 
@@ -457,7 +525,7 @@ section article ul {
     width: 100%;
 }
 
-#goods > ul > li p:nth-child(3){
+#goods > ul > li p:nth-child(3) {
     font-size: 14px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
@@ -467,15 +535,16 @@ section article ul {
     margin-top: 10px;
     margin-bottom: 3px;
 }
-#goods > ul > li p:nth-child(4){
+
+#goods > ul > li p:nth-child(4) {
     font-size: 14px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
     line-height: 1.286;
     letter-spacing: 1.1px;
     word-spacing: 2.6px;
-  
 }
+
 #goods ul li span {
     float: right;
     font-size: 1.2em;
@@ -485,33 +554,35 @@ section article ul {
     text-align: right;
     margin-top: 10px;
 }
+
+
 /* footer */
 
 footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:4.5%;
+    margin-top: 4.5%;
 }
 
 #footer {
     width: 58%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3.1%;
-    margin-bottom: 2.9%;
+    margin-top: 37.18px;
+    margin-bottom: 41.79px;
 }
 
 #social {
-    width:327px;
+    width: 327px;
     display: inline-block;
-    margin-top: 2.5%;
+    margin-top: 17.39px;
 }
 
 #social div {
     float: left;
-
 }
+
 #facebook {
     background: url('../images/social.png') no-repeat 0 0;
     width: 11px;
@@ -538,8 +609,7 @@ footer {
     width: 23px;
     height: 22px;
     padding-left: 54px;
-} 
-
+}
 
 #instagram {
     background: url('../images/social.png') no-repeat -100px -0px;
@@ -567,7 +637,8 @@ footer {
     width: 23px;
     height: 22px;
     padding-left: 58px;
-} 
+}
+
 #tweeter2 {
     background: url('../images/social.png') no-repeat -208px 0;
     width: 12px;
@@ -606,14 +677,17 @@ footer {
     background: url('../images/social-color.png') no-repeat -309px 0;
     width: 18px;
     height: 22px;
-} 
+}
 
 #footer input {
     width: 290px;
     height: 38px;
-    margin-left: 10.5%;
+    margin-top: 8px;
+    margin-right: 2px;
     background: url(../images/black-arrow.png) no-repeat;
     background-position: right 5% top 50%;
+    float: right;
+    border: solid 1px #969696;
 }
 
 #footer input:hover {
@@ -621,29 +695,33 @@ footer {
     background-position: right 5% top 50%;
 }
 
-input[value] {
+input[placeholder] {
     font-size: 17px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
-    line-height: 1.059;
-    padding-left: 2%;
-    letter-spacing: 1px;
+    padding-left: 14.39px;
+    padding-top: 0px;
+    letter-spacing: 1.6px;
 }
 
-footer #list{
+footer #list {
     width: 822px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:4.3%;
-    
+    margin-bottom: 4.3%;
 }
-footer #list ul{
-    overflow:auto;
+
+footer #list ul {
+    overflow: auto;
 }
+
 footer #list ul li {
     float: left;
     list-style-type: none;
     margin-right: 54px;
+    font-size: 14px;
+    font-family: "NeuzeitS";
+    color: rgb(50, 50, 50);
 }
 
 footer #list ul li:last-child {
@@ -655,7 +733,7 @@ footer #list ul li a {
     font-size: 14px;
     font-family: "NeuzeitS";
     color: rgb(50, 50, 50);
-    word-spacing:3px;
+    word-spacing: 3px;
     text-align: center;
     letter-spacing: 1.2px;
 }
@@ -667,82 +745,126 @@ footer #list ul li ul {
 
 footer #list ul li ul li {
     margin-right: 0;
-    border-right: 1px solid #afafaf;
+    position: relative;
+}
+
+footer #list ul ul li:after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #afafaf;
+    display: inline-block;
+}
+
+footer #list ul ul li:last-child:after {
+    display: none;
 }
 
 footer #list ul li ul li a {
     padding-left: 12px;
     padding-right: 12px;
-}
-
-footer #list ul li ul li:last-child {
-    border-right: none;
-    padding-right: 0;
+    word-spacing: 3px;
+    text-align: center;
+    letter-spacing: 1.2px;
 }
 
 footer #footerTerms {
-    margin-top: 4.3%;
-    width: 461px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow:auto;
-}
-
-footer #footerTerms li {
-    float: left;
-    color: #b2b2b2;
-    letter-spacing: 1px;
-    word-spacing: 1.3px;
-    font-size: 11px;
-    border-right: 1px solid #b2b2b2;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-footer #footerTerms li:first-child {
-    padding-left: 0;
-}
-
-footer #footerTerms li:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-
-#belowFooter {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 37px;
-}
-
-#belowFooter ul {
-    width:726px;
+    margin-top: 45.59px;
+    width: 472px;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
 }
 
+footer #footerTerms li {
+    float: left;
+    margin-right: 0;
+    position: relative;
+}
+
+footer #footerTerms li a {
+    color: #b2b2b2;
+    letter-spacing: 1px;
+    word-spacing: 1.3px;
+    font-size: 11px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+footer #footerTerms li:after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #afafaf;
+    display: inline-block;
+}
+
+footer #footerTerms li:last-child:after {
+    display: none;
+    padding-right: 0;
+}
+
+#belowFooter {
+    width: 100%;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#belowFooter ul {
+    overflow: auto;
+    display: inline-block;
+}
+
 #belowFooter ul li {
     float: left;
+    margin-right: 0;
+    position: relative;
+}
+
+#belowFooter li:after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #afafaf;
+    display: inline-block;
+}
+
+#belowFooter li:last-child:after {
+    display: none;
+    padding-right: 0;
+}
+
+#belowFooter ul li a {
     font-size: 12px;
     font-family: "Myriad Pro";
     color: rgb(50, 50, 50);
     text-transform: uppercase;
-    line-height: 1.523;
+    line-height: 2.323;
     text-align: center;
-    border-right: 1px solid black;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 11px;
+    padding-right: 11px;
     letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
-#belowFooter ul li:first-child {
-    padding-left: 0;
+#belowFooter span {
+    float: right;
+    font-size: 10px;
+    font-family: "NeuzeitS";
+    color: rgb(178, 178, 178);
+    text-transform: uppercase;
+    line-height: 2.323;
 }
 
-#belowFooter ul li:last-child {
-    border-right: none;
-    padding-right: 0;
+#belowFooter span img {
+    margin-top: -5px;
+    margin-left: 7px;
+    width: 8px;
+    height: 8px;
+}
+
+#belowFooter span img:hover {
+    background: url(../images/close.png) no-repeat;
 }
 
 .clear {

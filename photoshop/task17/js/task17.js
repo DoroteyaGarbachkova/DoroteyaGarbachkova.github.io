@@ -1,10 +1,10 @@
- $("#searchImg").mouseover(function() {
-     $('.search').toggle("slow");
+ $("#searchImg").on("click",function() {
+     $('.search').toggle('.search');
  });
- $("#searchImg").mouseout(function() {
-     $('.search').toggle("slow");
+/* $("#searchImg").on("click",function() {
+     $('.search').toggle('.search');
 
- });
+ });*/
 
 
 /*
